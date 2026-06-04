@@ -25,3 +25,8 @@ sort by due
 - 📄 [Datei öffnen](<file:///Users/tschmitz/Library/Mobile Documents/com~apple~CloudDocs/00 Privat/Finanzen privat/Finanzen/2026-06-01_AdmiralDirekt_KFZ-Nachtrag 25723731-001 Weißler.pdf>)
 - **Lastschrift** 11,59 € am 20.06.2026 → kein Zahl-To-do
 - [ ] 🔁 Wiedervorlage: Abbuchung 11,59 € prüfen 📅 2026-06-20
+
+### 2025-08-06 — Kreisverwaltung Germersheim: Betrauung SüdpfalzDOCs gGmbH
+- 📄 [Datei öffnen](<file:///Users/tschmitz/Library/Mobile Documents/com~apple~CloudDocs/40 SüdpfalzDOCs/gGmbH/2025-08-06_Kreisverwaltung Germersheim_Betrauung SüdpfalzDOCs gGmbH (BüroL-2025-0226).pdf>)
+- Beschlussvorlage BüroL/2025/0226 · Ausgleichszahlung 60.000 €/Jahr · Laufzeit 01.10.2025–30.09.2027 · 2. Zahlung fällig bis 30.11.2026
+- [ ] 🔁 SüdpfalzDOCs gGmbH: 2. Ausgleichszahlung 60.000 € prüfen 📅 2026-11-26
