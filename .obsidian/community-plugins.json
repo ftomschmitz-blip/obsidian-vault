@@ -3,5 +3,6 @@
   "obsidian-git",
   "templater-obsidian",
   "obsidian-tasks-plugin",
-  "dataview"
+  "dataview",
+  "obsidian-importer"
 ]
