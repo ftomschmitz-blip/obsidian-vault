@@ -47,3 +47,6 @@ Alle drei lokal, kostenlos, kein Cloud-Zugriff.
 - Komfortabel über Kommando-Palette: **„Tasks: Create or edit task".**
 
 > Hinweis: Aufgaben können in *jeder* Notiz stehen (Projekt, Praxis, Privat …) – das Cockpit sammelt sie automatisch nach Ordner/Rolle.
+
+---
+👉 **Vertiefung: [[Effektiv-Nutzung]]** – täglicher Ablauf, Wochen-Review, Projekte/Dokumente/Sitzungen anlegen, Morgen-Briefing.

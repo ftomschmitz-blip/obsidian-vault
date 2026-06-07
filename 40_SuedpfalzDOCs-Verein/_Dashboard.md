@@ -64,3 +64,7 @@ WHERE typ = "meeting"
 SORT datum DESC
 LIMIT 5
 ```
+
+
+---
+📘 Anleitung: [[Effektiv-Nutzung]] · 🛠️ [[System-Anleitung]]
