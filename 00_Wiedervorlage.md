@@ -47,3 +47,9 @@ sort by due
 - [ ] 🗑️ `99_Meta/_Archiv/` durchsehen und endgültig löschen 📅 2026-06-30
 - [ ] 🔁 Vault-Root auf lose Müll-/Testdateien prüfen 🔁 every month 📅 2026-07-07
 
+
+
+### 2026-06-06 — KV RLP: Abrechnung Q2/2026 (neue Vorprüfung 10:17)
+- 📄 [Honorarsimulation](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/10%20Praxis%20Bellheim/Bellheim%20Teampraxis/Abrechnung/2026-06-06_KVRLP_Honorarsimulation-Q2-2026.pdf) · [Prüfprotokoll](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/10%20Praxis%20Bellheim/Bellheim%20Teampraxis/Abrechnung/2026-06-06_KVRLP_Abrechnung-Pruefprotokoll-Q2-2026.pdf) · [Regelwerk](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/10%20Praxis%20Bellheim/Bellheim%20Teampraxis/Abrechnung/2026-06-06_KVRLP_Abrechnung-Regelwerk-Q2-2026.pdf)
+- ℹ️ KBV-Prüfmodul: **OK** (einreichbar). BSNR 510119500, 2.316 Scheine. Vorhaltepauschale: voraussichtlich Zuschlag **03042**. Vorprüfung listet noch 29 Hinweisarten mit zurückgestellten/gestrichenen Fällen.
+- [ ] ✍️ Q2/2026 Vorprüfung KV RLP abarbeiten vor Quartalsabschluss: 2 SKT-Behandlungsscheine hochladen (Abdule, Bülbül), zurückgestellte Fälle (fehlende kurative Diagnose: Lytvynov, Leydecker; HZV-Fall: Schwind) sowie Doppelansätze prüfen 📅 2026-06-30 #steuer/2026
