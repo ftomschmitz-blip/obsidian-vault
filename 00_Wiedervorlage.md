@@ -41,3 +41,9 @@ sort by due
 - 📄 [Report](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/40%20S%C3%BCdpfalzDOCs/2026-06-05_S%C3%BCdpfalzDOCs_Gesundheitszentrum-MVZ-Digitalisierung_Report.pdf) · [Transcript](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/40%20S%C3%BCdpfalzDOCs/2026-06-05_S%C3%BCdpfalzDOCs_Gesundheitszentrum-MVZ-Digitalisierung_Transcript.pdf)
 - ℹ️ Meeting-Report + Transcript (Bild-PDF ohne Textebene → ggf. lokal/OCR ansehen).
 - [ ] 📄 Report SüdpfalzDOCs MVZ/Digitalisierung durchsehen 📅 2026-06-20
+
+### 2026-06-07 — Vault-Hygiene: Archiv ausmisten
+- 🗂️ Ordner `99_Meta/_Archiv/` enthält 5 wertlose Alt-Dateien (leer/Test/Default), verschoben am 07.06.2026.
+- [ ] 🗑️ `99_Meta/_Archiv/` durchsehen und endgültig löschen 📅 2026-06-30
+- [ ] 🔁 Vault-Root auf lose Müll-/Testdateien prüfen 🔁 every month 📅 2026-07-07
+
