@@ -4,3 +4,6 @@ Nur Vereinsarbeit SüdpfalzDOCs — Mitgliederthemen, Vereins-Kommunikation. Bew
 
 **Farbcode:** Orange
 **Mail-Smart-Mailbox:** Verein
+
+---
+👉 **Einstieg: [[_Dashboard]]** — Aufgaben, Projekte, Dokumente & Sitzungen dieses Bereichs auf einen Blick.
