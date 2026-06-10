@@ -4,6 +4,7 @@ datum: 2026-06-10
 projekt: SüdpfalzDOCs
 thema: Krisengespräch Liquidität gGmbH
 vertraulich: ja
+teilnehmer: Jonas , Luisa, Tom
 ---
 # Gesprächsleitfaden Kurzfassung · Krisengespräch Liquidität · 10.06.2026
 
