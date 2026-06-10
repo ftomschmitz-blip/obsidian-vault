@@ -41,6 +41,8 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Nächster Schritt:** Kalender-Woche neu ansetzen (6 Hüte, RGB-Farbcode per AppleScript) + dabei Erinnerungen auf 6 v2-Listen migrieren
 - **Quellen:** [[2026-06-10-Konsistenz-Audit-Claude-Umgebung]] · `~/Desktop/Claude /Projekte/Organisation/Master-Plan_Setup_2026-05.md`
 
+- **Drift entdeckt (10.06., claude.ai-Browser-Session):** Projektwissen „Claude Optimierung" im Claude.ai-Projekt führt das Dispatch-Setup als komplett offen (alle Checkboxen leer), obwohl Dispatch seit Anfang Juni aktiv ist. Datei liegt weder im Vault noch unter `~/Documents/Claude/Projects` — nur als Projektwissen in der Claude.ai-UI, daher per MCP nicht korrigierbar. → **Tom:** Status-Block in der Projekt-UI durch Verweis auf [[00_Faeden]] ersetzen (Snippet aus Chat 10.06.)
+
 ### 🟡 Blitztext: Hotkeys zum Laufen bringen
 - **Hut:** übergreifend · **Stand:** 10.06. — App läuft, Diktat per Menüleisten-Klick funktioniert (inkl. Auto-Paste). Hotkeys gehen nicht — Ursache gefunden: Belegung war falsch notiert, laut Code ist Transkription **`fn + Shift`** (nicht `fn` allein). `AppleFnUsageType` stand wieder auf 3, erneut auf 0 gesetzt.
 - **Nächster Schritt:** `fn + Shift` halten → sprechen → loslassen testen. Falls tot: Bedienungshilfen-Berechtigung prüfen (Systemeinstellungen → Datenschutz & Sicherheit → Bedienungshilfen, alte Blitztext-Einträge entfernen, App neu starten)
