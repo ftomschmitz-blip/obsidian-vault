@@ -6,6 +6,8 @@ typ: cockpit
 Zentrale Übersicht aller offenen Aufgaben aus deinen Rollen.
 **So entstehen Aufgaben:** Schreib in *irgendeiner* Notiz eine Zeile `- [ ] Text 📅 2026-06-10`. Sie taucht hier automatisch auf. Fälligkeit per 📅-Symbol (Tasks-Plugin setzt es bequem über das Kommando „Tasks: Create or edit task").
 
+**Projekt-Ebene:** 🧵 [[00_Faeden]] — laufende Handlungsfäden, Top-3 der Woche, Parkplatz.
+
 ## 🔴 Überfällig
 ```tasks
 not done
