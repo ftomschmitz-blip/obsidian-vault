@@ -37,8 +37,9 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Quellen:** [[00_Wiedervorlage]] (Einträge 04.06. + 06.06.) · Projektordner `~/Documents/Claude/Projects/Praxis Assistent zur Datenanalyse  KV Abrechnungen/`
 
 ### 🟡 Organisation: 6-Hüte-Setup (Master-Plan v2)
-- **Hut:** übergreifend · **Stand:** 10.06. (Status-Check) — Plan v2 steht, Woche 2 (Kalender) muss wiederholt werden. Planfile noch auf v1 — v2-Beschlüsse dort nicht zurückgeschrieben.
-- **Nächster Schritt:** Kalender-Woche neu ansetzen (6 Hüte, RGB-Farbcode per AppleScript)
+- **Hut:** übergreifend · **Stand:** 10.06. (abends, Konsistenz-Audit) — Planfile jetzt vollständig auf v2 konsolidiert (v1-Reste in Roadmap/Tasks/Mailbox/Dateien-Abschnitten entfernt). Cross-App-Drift behoben: kanonische Quellen festgelegt (Planfile = Soll · dieser Faden = Stand · Memory = nur Verweis). Ist-Zustand erhoben: Erinnerungen noch 4 v1-Listen + 8 Alt-Listen („Erinnerungen Private" doppelt!), Kalender noch v1-Farben.
+- **Nächster Schritt:** Kalender-Woche neu ansetzen (6 Hüte, RGB-Farbcode per AppleScript) + dabei Erinnerungen auf 6 v2-Listen migrieren
+- **Quellen:** [[2026-06-10-Konsistenz-Audit-Claude-Umgebung]] · `~/Desktop/Claude /Projekte/Organisation/Master-Plan_Setup_2026-05.md`
 
 ### 🟡 Blitztext: Hotkeys zum Laufen bringen
 - **Hut:** übergreifend · **Stand:** 10.06. — App läuft, Diktat per Menüleisten-Klick funktioniert (inkl. Auto-Paste). Hotkeys gehen nicht — Ursache gefunden: Belegung war falsch notiert, laut Code ist Transkription **`fn + Shift`** (nicht `fn` allein). `AppleFnUsageType` stand wieder auf 3, erneut auf 0 gesetzt.
@@ -46,9 +47,9 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Quellen:** [[2026-06-10-Blitztext-Hotkeys]] · `~/blitztext-app/BlitztextMac/Services/HotkeyService.swift`
 
 ### 🟡 Mail-System: Smart-Mailbox-Fixes
-- **Hut:** übergreifend · **Stand:** 07.06. — Analyse fertig, 12 statt 6 Mailboxen, 2 FlaggedStatus-Fehler
-- **Nächster Schritt:** FlaggedStatus korrigieren (rot=1, orange=2), Duplikate klären, Entscheidung 6 vs. 12
-- **Quellen:** [[2026-06-07-Smart-Mailbox-Sortierung]] · [[Mail-System]]
+- **Hut:** übergreifend · **Stand:** 10.06. — Ursache der Duplikate geklärt: zwei Generationen aus zwei Apps. v1 (06.05., Claude Code): 📅 Heute · 📥 Privat · 📥 Praxis Bellheim · ⭐ To-Do (heute). v2 (05.06., Cowork): Teampraxis · Berufliches & CME · Firma & Investments · Verein · gGmbH · Follow-up rot · Warten auf Antwort orange. Aktuell 11 Boxen; funktionale Duplikate: 📥 Praxis Bellheim↔Teampraxis, ⭐ To-Do↔GTD-Flags.
+- **Nächster Schritt:** Tom entscheidet: v1-Reste (📥 Praxis Bellheim, ⭐ To-Do, ggf. 📥 Privat/📅 Heute) löschen? Dann: FlaggedStatus korrigieren (rot=1, orange=2) + Bereinigung in einem Plist-Durchgang (Mail beenden, Undo-Log)
+- **Quellen:** [[2026-06-07-Smart-Mailbox-Sortierung]] · [[Mail-System]] · [[2026-06-10-Konsistenz-Audit-Claude-Umgebung]]
 
 ---
 
