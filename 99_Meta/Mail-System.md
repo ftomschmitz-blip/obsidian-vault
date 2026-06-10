@@ -90,3 +90,20 @@ _WARTEN_AUF_ANTWORT          (manuelle GTD-Ablage)
 
 - Vollständige Gesamt-Bilanz: `outputs/mail_gesamt_bilanz.md` (Cowork-Session)
 - Undo-Log mit Vorher-Stand pro Änderung: `outputs/mail_undo_log.md` (Cowork-Session)
+
+
+---
+
+## ⚠️ NACHTRAG 10.06.2026 (abends): Umzug auf iCloud-Server — Teile dieser Notiz sind überholt
+
+**Cowork-Session „Mail-Geräte-Harmonisierung":** Die Beschreibung oben (Regeln → lokale Ordner) entspricht nicht mehr dem Ist-Zustand. Durchgeführte Aktionen (Undo-Log):
+
+1. **Befund vorab:** 7/8 aktive Regeln zielten bereits auf iCloud-Server-Ordner; Struktur 00–90 existierte serverseitig. Nur „SüdpfalzDOCs → 40 Ordner" zielte noch auf `local:///40 SüdpfalzDOCs`.
+2. **Neu angelegt (iCloud-Konto):** `40 SüdpfalzDOCs` + Unterordner Behörden & KV, Dienstplanung, Finanzen SüdpfalzDOCs, Mitglieder.
+3. **Regel umgestellt:** „SüdpfalzDOCs → 40 Ordner" zielt jetzt auf `imap://…/40 SüdpfalzDOCs` (verifiziert in SyncedRules.plist). „Nicht anwenden" beim Bestands-Prompt gewählt.
+4. **Bestand verschoben (UI, Mail.app):** 3.474 Mails lokal `40 SüdpfalzDOCs` → iCloud `40 SüdpfalzDOCs`; 92 Mails lokal `10 Praxis Bellheim/HZV & DMP` → iCloud `10 Praxis Bellheim/HZV & DMP`. Index-verifiziert; lokale Ordner: 0 Mails. Upload (~3,9 GB) läuft asynchron.
+5. **Undo-Weg:** Mails in Mail.app markieren → zurück in lokale Ordner bewegen (Ordnerstruktur lokal noch vorhanden, bewusst nicht gelöscht).
+
+**Offen:** TEST_ICLOUD_FOLDER (iCloud) löschen · leere lokale 00–90-Struktur + lokaler Spiegelordner „iCloud" (leer, Artefakt) entfernen — beides erst nach Toms Freigabe und erfolgreichem Sync · Outbox-Altlasten (129 verwaiste Kopien, siehe [[2026-06-10-Mail-Geraete-Harmonisierung]]) · diese Notiz nach Sync-Bestätigung konsolidieren.
+
+**Merke für alle Geräte:** Ablage-Logik liegt jetzt vollständig auf dem iCloud-Server → iPhone/iPad sehen dieselben Ordner. Smart Mailboxen bleiben Mac-only (Apple-Limitierung), GTD-Flags syncen überall.

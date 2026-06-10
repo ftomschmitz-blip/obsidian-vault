@@ -28,3 +28,12 @@ Entscheidungsvorlage erstellt (Cowork-Outputs: `Entscheidungsvorlage_Mail-Harmon
 
 ## Nachtrag (gleiche Session): Outbox-Anomalie geklärt
 Forensischer Abgleich der 129 Outbox-Dateien gegen den Envelope Index (read-only, immutable): Postausgang laut Index **leer** (daher in Mail-UI unsichtbar) → verwaiste Arbeitskopien. **126/129 in „Gesendet" nachgewiesen** (Abgleich Betreff ohne Re:/Fwd:-Präfix ± 3 Tage). Boarding Pass: Zustellung an eigenen Posteingang belegt. Offen nur: „Fwd: Vorhaltepauschale 2026" an C. Weißler (24.03.2026, wahrscheinlich versendet — Tom fragt nach oder sendet erneut) und „Präsentation Sommerakademie" (07/2024, irrelevant). Verwaiste Dateien können beim Aufräumschritt entfernt werden (nur nach Rückfrage).
+
+## Nachtrag 2: Umsetzung Weg A (gleiche Session, abends)
+Tom entschied: Umzug auf iCloud. Per Bildschirmsteuerung (Mail.app) umgesetzt:
+1. iCloud-Ordner `40 SüdpfalzDOCs` + 4 Unterordner angelegt (Falle umschifft: es existiert ein **lokaler** Ordner namens „iCloud" mit leerer Spiegelstruktur — Verwechslungsgefahr!)
+2. Regel „SüdpfalzDOCs → 40 Ordner" auf iCloud-Ziel umgestellt (plist-verifiziert: `imap://…/40 SüdpfalzDOCs`), Bestands-Anwendung abgelehnt
+3. Bestand verschoben: 3.474 (40er) + 92 (HZV & DMP) = 3.566 Mails; Index-verifiziert, lokale Quellordner leer. Upload ~3,9 GB läuft asynchron — Mac anlassen
+4. Undo: Ordnerstruktur lokal bewusst stehengelassen; Rückverschiebung jederzeit möglich. Details in [[Mail-System]] (Nachtrag)
+
+**Nächste Schritte:** Morgen Sync prüfen (iPhone: Ordner 00–90 + Inhalte sichtbar?) → dann mit Toms Freigabe: TEST_ICLOUD_FOLDER, leere lokale Struktur, lokaler „iCloud"-Spiegelordner, Outbox-Altlasten aufräumen + [[Mail-System]] konsolidieren.
