@@ -26,10 +26,10 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 ## Aktive Fäden
 
 ### 🔴 gGmbH Liquiditätskrise
-- **Hut:** 50_gGmbH · **Stand:** 10.06. — Gesprächsleitfaden komplett überarbeitet (Fakten: keine Übernahme bis 2027, kein Kredit, nur Spenden, Burn-Rate ~10–11 T€/Mt.)
-- **Nächster Schritt:** Kontostand Sparkasse + VR Bank feststellen → Reichweite in Monaten (bei Unterdeckung: § 15a InsO!)
-- **Danach:** Krisengespräch Vorstand · Excel-Szenario „Übernahme 2027" · StB-Einschätzung · 3 Dateien ins Claude-Projekt „Südpfalzdocs" hochladen
-- **Quellen:** [[2026-06-10-gGmbH-Liquiditaetskrise-Leitfaden]] · `~/Desktop/Claude /gGmbH Südpfalz/`
+- **Hut:** 50_gGmbH · **Stand:** 10.06. (abends) — Leitfaden v2 + rollierender Plan geprüft: Juni nur mit Stundung der Anwaltsrechnung gedeckt (sonst −659 €), Lücke bis 31.12. real 46–81 T€ (nicht 35–40). Krisengespräch im Sparring trainiert; Maßnahmenkatalog mit 10 Beschlusspunkten, Verantwortlichen und Fristen steht: [[Massnahmenkatalog-Liquiditaet-gGmbH-2026-06-10]]
+- **Nächster Schritt:** StB-Anfrage §§ 17/18/15a/15b InsO binnen 48 h raus (Anlagen: BWA 04/2026 + Liquiditätsstatus) → Krisengespräch Vorstand terminieren
+- **Danach:** Leitfaden-Einstieg auf korrigierte Juni-Lage anpassen · 13-Wochen-Plan-Sachkosten vom GF · Kreis-Termin (Betrauungsmittel)
+- **Quellen:** [[2026-06-10-Krisengespraech-Training]] · [[2026-06-10-gGmbH-Liquiditaetskrise-Leitfaden]] · `~/Desktop/Claude /gGmbH Südpfalz/`
 
 ### 🔴 Praxis: KV-Abrechnung Q2/2026
 - **Hut:** 10_Praxis-Bellheim · **Stand:** 10.06. — Faden ins Cowork-Projekt „Praxis Assistent zur Datenanalyse KV Abrechnungen" übernommen; Detail-Dokument `KV-Abrechnung-Q2-2026_Status.md` im Projektordner angelegt (Kennzahlen, offene Punkte, PDF-Links)
