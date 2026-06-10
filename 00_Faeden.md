@@ -64,6 +64,7 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Downloads-Rest:** Cloud-Stubs prüfen + MS365-Ablage (aus Bereinigung 30.05.)
 - **Festplatte:** nur noch 17 GB frei (97 %) — nächste Kandidaten: icloudmailagent (812 MB), Google-Cache (787 MB)
 - **Obsidian-MCP:** recent_changes defekt — bei Gelegenheit fixen oder ersetzen
+- **Sommerurlaub 2026 (06.–17.07. ±1–2 Tage):** Prompt für Planung/Buchung/Durchführung fertig (10.06.): [[Prompt_Sommerurlaub-2026]] + Kopie auf Desktop. Nächster Schritt: Phase 1 starten (3 Reiseoptionen einholen) — spätestens Ende Juni wegen Hochsaison
 
 ---
 
