@@ -32,9 +32,9 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Quellen:** [[2026-06-10-gGmbH-Liquiditaetskrise-Leitfaden]] · `~/Desktop/Claude /gGmbH Südpfalz/`
 
 ### 🔴 Praxis: KV-Abrechnung Q2/2026
-- **Hut:** 10_Praxis-Bellheim · **Stand:** 06.06. — KBV-Prüfmodul OK, aber 29 Hinweisarten offen
-- **Nächster Schritt:** 2 SKT-Scheine hochladen, zurückgestellte Fälle + Doppelansätze prüfen — **Frist 30.06.**
-- **Quellen:** [[00_Wiedervorlage]] (Eintrag 06.06.)
+- **Hut:** 10_Praxis-Bellheim · **Stand:** 10.06. — Faden ins Cowork-Projekt „Praxis Assistent zur Datenanalyse KV Abrechnungen" übernommen; Detail-Dokument `KV-Abrechnung-Q2-2026_Status.md` im Projektordner angelegt (Kennzahlen, offene Punkte, PDF-Links)
+- **Nächster Schritt:** 3 KV-PDFs vom 06.06. in den Projektordner kopieren → dann 29 Hinweisarten analysieren (€-Wirkung, Priorisierung). Parallel: 2 SKT-Scheine hochladen (Abdule, Bülbül), zurückgestellte Fälle (Lytvynov, Leydecker, HZV: Schwind) + Doppelansätze prüfen — **Frist 30.06.**
+- **Quellen:** [[00_Wiedervorlage]] (Einträge 04.06. + 06.06.) · Projektordner `~/Documents/Claude/Projects/Praxis Assistent zur Datenanalyse  KV Abrechnungen/`
 
 ### 🟡 Organisation: 6-Hüte-Setup (Master-Plan v2)
 - **Hut:** übergreifend · **Stand:** 23.05. — Plan v2 steht, Woche 2 (Kalender) muss wiederholt werden
