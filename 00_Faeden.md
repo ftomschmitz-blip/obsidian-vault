@@ -52,6 +52,13 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 
 ---
 
+
+### 🟢 Hermes Agent im VCP
+- **Hut:** übergreifend · **Stand:** 10.06. (abends) — Setup komplett: Hermes auf Hostinger VPS, Telegram-Gateway aktiv, `/sethome` gesetzt. Erster Cron-Job läuft: Morning Briefing Mo–Fr 7:00 per Telegram (News DE, Wetter Bellheim, Medizin-Update). Zugangsdaten in 1Password
+- **Nächster Schritt:** Morgen (11.06.) prüfen, ob das erste Briefing um 7:00 ankommt und Qualität passt → danach weitere Use Cases. Oxylabs-Credits im Blick behalten (Websuche)
+- **Regel:** keine Patientendaten/Zugangsdaten/gGmbH-Interna über den Bot (kein E2E)
+- **Quellen:** [[2026-06-10-Hermes-Telegram-Setup]]
+
 ## ⏸️ Parkplatz
 
 - **Downloads-Rest:** Cloud-Stubs prüfen + MS365-Ablage (aus Bereinigung 30.05.)
