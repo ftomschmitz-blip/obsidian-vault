@@ -25,3 +25,6 @@ Entscheidungsvorlage erstellt (Cowork-Outputs: `Entscheidungsvorlage_Mail-Harmon
 ## Offen
 - Tom entscheidet: 40er-Ziel auf iCloud oder ins Exchange-Konto SüdpfalzDOCs
 - Nach Umsetzung: [[Mail-System]] korrigieren (Regel-Ziele, lokale Ordner)
+
+## Nachtrag (gleiche Session): Outbox-Anomalie geklärt
+Forensischer Abgleich der 129 Outbox-Dateien gegen den Envelope Index (read-only, immutable): Postausgang laut Index **leer** (daher in Mail-UI unsichtbar) → verwaiste Arbeitskopien. **126/129 in „Gesendet" nachgewiesen** (Abgleich Betreff ohne Re:/Fwd:-Präfix ± 3 Tage). Boarding Pass: Zustellung an eigenen Posteingang belegt. Offen nur: „Fwd: Vorhaltepauschale 2026" an C. Weißler (24.03.2026, wahrscheinlich versendet — Tom fragt nach oder sendet erneut) und „Präsentation Sommerakademie" (07/2024, irrelevant). Verwaiste Dateien können beim Aufräumschritt entfernt werden (nur nach Rückfrage).

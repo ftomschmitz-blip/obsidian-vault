@@ -49,8 +49,8 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Quellen:** [[2026-06-10-Blitztext-Hotkeys]] · `~/blitztext-app/BlitztextMac/Services/HotkeyService.swift`
 
 ### 🟢 Mail-System: Smart-Mailbox-Fixes
-- **Hut:** übergreifend · **Stand:** 10.06. (spät) — Geräte-Harmonisierungs-Analyse (nur lesend): 7/8 aktive Regeln zielen bereits auf iCloud-**Server**-Ordner, Struktur 00–90 existiert serverseitig — [[Mail-System]] ist hier veraltet (Drift). Lokal nur noch: 40 SüdpfalzDOCs (3.462 Mails/3,8 GB, Regel zielt noch auf `local://`) + 10 Praxis (93 Mails). **⚠️ Lokaler Postausgang: 129 Mails/770 MB — evtl. nie versendet, prüfen!** Entscheidungsvorlage in Cowork-Outputs.
-- **Nächster Schritt:** (1) Outbox sichten, (2) Tom entscheidet 40er-Ziel (iCloud vs. Exchange-Konto), dann Regel umstellen + 3,9 GB umziehen (Time-Machine-Stand vorher), (3) danach [[Mail-System]] korrigieren
+- **Hut:** übergreifend · **Stand:** 10.06. (spät) — Geräte-Harmonisierungs-Analyse (nur lesend): 7/8 aktive Regeln zielen bereits auf iCloud-**Server**-Ordner, Struktur 00–90 existiert serverseitig — [[Mail-System]] ist hier veraltet (Drift). Lokal nur noch: 40 SüdpfalzDOCs (3.462 Mails/3,8 GB, Regel zielt noch auf `local://`) + 10 Praxis (93 Mails). **Outbox-Anomalie geklärt:** 129 Dateien/770 MB sind verwaiste Arbeitskopien, 126/129 in „Gesendet" nachgewiesen, Index leer. Nur „Fwd: Vorhaltepauschale 2026" an C. Weißler (24.03.) ohne harten Nachweis. Entscheidungsvorlage in Cowork-Outputs.
+- **Nächster Schritt:** (1) Tom: bei C. Weißler nachfragen/erneut senden, (2) Tom entscheidet 40er-Ziel (iCloud vs. Exchange-Konto SüdpfalzDOCs), dann Regel umstellen + 3,9 GB umziehen (Time-Machine-Stand vorher), (3) danach [[Mail-System]] korrigieren + verwaiste Outbox-Dateien aufräumen
 - **Quellen:** [[2026-06-10-Mail-Geraete-Harmonisierung]] · [[2026-06-07-Smart-Mailbox-Sortierung]] · [[Mail-System]]
 
 ### 🟢 Hermes Agent im VCP
