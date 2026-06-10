@@ -41,3 +41,14 @@ Festplatte bereinigt (~2,5 GB, jetzt 17 GB frei), dann Cowork-Sandbox-Dateien au
 - `~/Desktop/Claude /gGmbH Südpfalz/Gespraechsleitfaden Krisengespraech Liquiditaet gGmbH.docx`
 - `~/Desktop/Claude /gGmbH Südpfalz/Liquiditätsplanung MVZ_2025-2028.xlsx`
 - `~/Desktop/Claude /gGmbH Südpfalz/Ergebnisse_Liquiditaetskrise_2026-06-10.md`
+
+---
+
+## Außerdem in dieser Session: 🧵 Fäden-System eingeführt
+
+Neues System gegen Verzetteln über Claude Code / Claude Desktop / Cowork hinweg:
+
+- **[[00_Faeden]]** (Vault-Root): Projekt-Ebene über dem Cockpit — alle Handlungsfäden mit Stand, nächstem Schritt, Top-3 der Woche, Parkplatz
+- **Drei Spielregeln:** (1) jede Claude-Session aktualisiert am Ende ihren Faden-Block, (2) WIP-Limit 7 — Neues in den Parkplatz, (3) Wochenreview Fr/So mit „Wochenreview bitte" → Top-3 neu setzen
+- **Sync-Logik:** Vault = Single Source of Truth (Claude Code via Dateisystem, Claude Desktop via mcp-obsidian); Claude-App-Projektwissen = nur Snapshot, manuell aktualisieren
+- **Verankert in:** [[Cowork-Workflow]] (Schritt 5 + Wochenreview-Ablauf + Instruktions-Baustein), Claude-Code-Memory, allen Claude-App-Projekt-Instruktionen (von Tom eingefügt, 10.06.), [[00_Cockpit]] (Link)
