@@ -37,8 +37,8 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Quellen:** [[00_Wiedervorlage]] (Einträge 04.06. + 06.06.) · Projektordner `~/Documents/Claude/Projects/Praxis Assistent zur Datenanalyse  KV Abrechnungen/`
 
 ### 🟡 Organisation: 6-Hüte-Setup (Master-Plan v2)
-- **Hut:** übergreifend · **Stand:** 23.05. — Plan v2 steht, Woche 2 (Kalender) muss wiederholt werden
-- **Nächster Schritt:** Kalender-Woche neu ansetzen
+- **Hut:** übergreifend · **Stand:** 10.06. (Status-Check) — Plan v2 steht, Woche 2 (Kalender) muss wiederholt werden. Planfile noch auf v1 — v2-Beschlüsse dort nicht zurückgeschrieben.
+- **Nächster Schritt:** Kalender-Woche neu ansetzen (6 Hüte, RGB-Farbcode per AppleScript)
 
 ### 🟡 Blitztext: Hotkeys zum Laufen bringen
 - **Hut:** übergreifend · **Stand:** 10.06. — App läuft, Diktat per Menüleisten-Klick funktioniert (inkl. Auto-Paste). Hotkeys gehen nicht — Ursache gefunden: Belegung war falsch notiert, laut Code ist Transkription **`fn + Shift`** (nicht `fn` allein). `AppleFnUsageType` stand wieder auf 3, erneut auf 0 gesetzt.
