@@ -61,14 +61,11 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 
 ## ⏸️ Parkplatz
 
+
 - **Downloads-Rest:** Cloud-Stubs prüfen + MS365-Ablage (aus Bereinigung 30.05.)
 - **Festplatte:** nur noch 17 GB frei (97 %) — nächste Kandidaten: icloudmailagent (812 MB), Google-Cache (787 MB)
 - **Obsidian-MCP:** recent_changes defekt — bei Gelegenheit fixen oder ersetzen
-- **Sommerurlaub 2026 (06.–17.07.):** Phase 1 erledigt (10.06.) — Gardasee-Shortlist mit 6 Häusern + Sardinien-Alternative in [[Sommerurlaub-2026_Planung]]; Annecy gestrichen; Originaltermin = günstigster Slot. **Weiter in Cowork:** Tom wählt Favoriten → Basketball-Check + Detailprüfung → Phase 2. Frist: Buchung bis Ende Juni
-
----
-
-- **Hermes↔Vault-Brücke:** Sync-Skript auf dem Mac (launchd), das Hermes-Captures in eine Vault-Inbox-Notiz zieht; ggf. gefilterte Aufgaben (ohne Praxis-Hut) zum VPS. Nur starten, wenn Stufe 1 (Hermes als Unterwegs-Inbox) sich 1–2 Wochen bewährt hat
+- **Sommerurlaub 2026 (06.–17.07.):** Phase 2 erledigt (10.06. abends) — Italsol + Sardinien gestrichen, Detailauswertung Le Torri vs. La Fenice in [[Sommerurlaub-2026_Detailcheck_Le-Torri_vs_La-Fenice]]. **Empfehlung: La Fenice + Casa Vacanze Sole.** **Nächster Schritt Tom:** La Fenice telefonisch klären (Casa-Verfügbarkeit, Tennis, Basketball im Ort), parallel Le Torri als Backup. Frist: Buchung bis Ende Juni.
 
 ## Erledigt (Kurzarchiv, letzte 5)
 

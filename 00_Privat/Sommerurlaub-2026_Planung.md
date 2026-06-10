@@ -49,3 +49,21 @@ Booking-Links (Suchdaten 06.–17.07., 3 Zi., 3 Erw. + 3 Kinder 15):
 4. **Italsol-Preisvolatilität klären** (2.587 € → 3.592 € je nach Apartment-Mix; direkt beim Anbieter prüfen)
 5. Dann **Phase 2 (Buchung)** laut [[Prompt_Sommerurlaub-2026]]: Checkliste, keine Buchung ohne Freigabe
 6. ⏰ **Frist: Buchung bis Ende Juni 2026** (Hochsaison, Preise steigen)
+
+
+---
+
+## Update 10.06.2026 (abends, Cowork) — Phase 2 gestartet
+
+**Streichungen:**
+- ❌ **Italsol Residence Riai (Moniga)** — Preisvolatilität + keine Bewertungen → raus
+- ❌ **Sardinien-Variante (Il Borgo di Porto Corallo)** — Flug-Aufschlag + Logistik → raus
+- ✅ Übrig: **2 Favoriten** = Le Torri Del Garda (Ost) + La Fenice e Sole (West, Tremosine)
+
+**Phase-2-Detailauswertung (Zimmer, HP, Storno, Tennis, Basketball, Reviews, Anreise) liegt in:**
+
+→ [[Sommerurlaub-2026_Detailcheck_Le-Torri_vs_La-Fenice]]
+
+**Kurz-Fazit:** Empfehlung **La Fenice e Sole + Casa Vacanze Sole für Stiefsohn** (Tennis on-site, ~4 T€ Budget-Puffer, passende Stiefsohn-Entkopplung, besser für 15-jährige Teens auf Eigeninitiative).
+
+**Nächster Schritt:** Tom telefoniert La Fenice (+39 0365 917037) für Verfügbarkeit Casa Vacanze + Tennis-Details + Basketball-Tipp im Ort; parallel Le Torri (+39 045 6298111) als Backup.
