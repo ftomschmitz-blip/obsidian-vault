@@ -40,6 +40,11 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Hut:** übergreifend · **Stand:** 23.05. — Plan v2 steht, Woche 2 (Kalender) muss wiederholt werden
 - **Nächster Schritt:** Kalender-Woche neu ansetzen
 
+### 🟡 Blitztext: Hotkeys zum Laufen bringen
+- **Hut:** übergreifend · **Stand:** 10.06. — App läuft, Diktat per Menüleisten-Klick funktioniert (inkl. Auto-Paste). Hotkeys gehen nicht — Ursache gefunden: Belegung war falsch notiert, laut Code ist Transkription **`fn + Shift`** (nicht `fn` allein). `AppleFnUsageType` stand wieder auf 3, erneut auf 0 gesetzt.
+- **Nächster Schritt:** `fn + Shift` halten → sprechen → loslassen testen. Falls tot: Bedienungshilfen-Berechtigung prüfen (Systemeinstellungen → Datenschutz & Sicherheit → Bedienungshilfen, alte Blitztext-Einträge entfernen, App neu starten)
+- **Quellen:** [[2026-06-10-Blitztext-Hotkeys]] · `~/blitztext-app/BlitztextMac/Services/HotkeyService.swift`
+
 ### 🟡 Mail-System: Smart-Mailbox-Fixes
 - **Hut:** übergreifend · **Stand:** 07.06. — Analyse fertig, 12 statt 6 Mailboxen, 2 FlaggedStatus-Fehler
 - **Nächster Schritt:** FlaggedStatus korrigieren (rot=1, orange=2), Duplikate klären, Entscheidung 6 vs. 12
@@ -57,4 +62,4 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 
 ## Erledigt (Kurzarchiv, letzte 5)
 
-- ✅ 10.06. **Blitztext Sprachsteuerung:** läuft — Ursache war macOS-fn-Tasten-Konflikt (Apple-Diktat, `AppleFnUsageType` 3→0); erfolgreich getestet in Notizen-App und Chat
+- ✅ 10.06. **Blitztext Grundinstallation:** App läuft, Diktat per Menüleisten-Klick + Auto-Paste funktioniert (Hotkeys → eigener Faden)
