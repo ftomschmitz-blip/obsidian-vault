@@ -49,12 +49,9 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Quellen:** [[2026-06-10-Blitztext-Hotkeys]] · `~/blitztext-app/BlitztextMac/Services/HotkeyService.swift`
 
 ### 🟢 Mail-System: Smart-Mailbox-Fixes
-- **Hut:** übergreifend · **Stand:** 10.06. (abends) — **Bereinigung erledigt:** „Teampraxis" (schwächeres Absender-Duplikat von „📥 Praxis Bellheim") + „⭐ To-Do (heute)" (ersetzt durch GTD-Flags) gelöscht, mit Tom bestätigt → **9 Boxen**. Wichtig: Der FlaggedStatus-„Fix" aus der 07.06.-Analyse war FALSCH (0=Rot, 1=Orange ist korrekt, Werte stimmen) — Notiz korrigiert, nichts geändert. Plist-Backup im Organisation-Ordner.
-- **Nächster Schritt:** Einige Tage beobachten, ob Mail/iCloud-Sync die 9 Boxen sauber hält → dann Faden ins Kurzarchiv
-- **Quellen:** [[2026-06-07-Smart-Mailbox-Sortierung]] · [[Mail-System]] · [[2026-06-10-Konsistenz-Audit-Claude-Umgebung]]
-
----
-
+- **Hut:** übergreifend · **Stand:** 10.06. (spät) — Geräte-Harmonisierungs-Analyse (nur lesend): 7/8 aktive Regeln zielen bereits auf iCloud-**Server**-Ordner, Struktur 00–90 existiert serverseitig — [[Mail-System]] ist hier veraltet (Drift). Lokal nur noch: 40 SüdpfalzDOCs (3.462 Mails/3,8 GB, Regel zielt noch auf `local://`) + 10 Praxis (93 Mails). **⚠️ Lokaler Postausgang: 129 Mails/770 MB — evtl. nie versendet, prüfen!** Entscheidungsvorlage in Cowork-Outputs.
+- **Nächster Schritt:** (1) Outbox sichten, (2) Tom entscheidet 40er-Ziel (iCloud vs. Exchange-Konto), dann Regel umstellen + 3,9 GB umziehen (Time-Machine-Stand vorher), (3) danach [[Mail-System]] korrigieren
+- **Quellen:** [[2026-06-10-Mail-Geraete-Harmonisierung]] · [[2026-06-07-Smart-Mailbox-Sortierung]] · [[Mail-System]]
 
 ### 🟢 Hermes Agent im VCP
 - **Hut:** übergreifend · **Stand:** 10.06. (abends) — Setup komplett: Hermes auf Hostinger VPS, Telegram-Gateway aktiv, `/sethome` gesetzt. Erster Cron-Job läuft: Morning Briefing Mo–Fr 7:00 per Telegram (News DE, Wetter Bellheim, Medizin-Update). Zugangsdaten in 1Password
