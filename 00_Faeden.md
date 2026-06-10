@@ -45,10 +45,6 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Nächster Schritt:** FlaggedStatus korrigieren (rot=1, orange=2), Duplikate klären, Entscheidung 6 vs. 12
 - **Quellen:** [[2026-06-07-Smart-Mailbox-Sortierung]] · [[Mail-System]]
 
-### 🟢 Blitztext App
-- **Hut:** 30_Firma · **Stand:** 09.06. — installiert, API-Key drin
-- **Nächster Schritt:** Diktat mit fn-Taste testen
-
 ---
 
 ## ⏸️ Parkplatz
@@ -61,4 +57,4 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 
 ## Erledigt (Kurzarchiv, letzte 5)
 
-- *(noch leer — wird im Wochenreview gepflegt)*
+- ✅ 10.06. **Blitztext Sprachsteuerung:** läuft — Ursache war macOS-fn-Tasten-Konflikt (Apple-Diktat, `AppleFnUsageType` 3→0); erfolgreich getestet in Notizen-App und Chat
