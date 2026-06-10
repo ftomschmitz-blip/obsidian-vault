@@ -53,3 +53,15 @@ sort by due
 - 📄 [Honorarsimulation](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/10%20Praxis%20Bellheim/Bellheim%20Teampraxis/Abrechnung/2026-06-06_KVRLP_Honorarsimulation-Q2-2026.pdf) · [Prüfprotokoll](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/10%20Praxis%20Bellheim/Bellheim%20Teampraxis/Abrechnung/2026-06-06_KVRLP_Abrechnung-Pruefprotokoll-Q2-2026.pdf) · [Regelwerk](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/10%20Praxis%20Bellheim/Bellheim%20Teampraxis/Abrechnung/2026-06-06_KVRLP_Abrechnung-Regelwerk-Q2-2026.pdf)
 - ℹ️ KBV-Prüfmodul: **OK** (einreichbar). BSNR 510119500, 2.316 Scheine. Vorhaltepauschale: voraussichtlich Zuschlag **03042**. Vorprüfung listet noch 29 Hinweisarten mit zurückgestellten/gestrichenen Fällen.
 - [ ] ✍️ Q2/2026 Vorprüfung KV RLP abarbeiten vor Quartalsabschluss: 2 SKT-Behandlungsscheine hochladen (Abdule, Bülbül), zurückgestellte Fälle (fehlende kurative Diagnose: Lytvynov, Leydecker; HZV-Fall: Schwind) sowie Doppelansätze prüfen 📅 2026-06-30 #steuer/2026
+
+
+### 2026-04-30 — Sauber 360°: Unterhaltsreinigung April
+- 📄 [Datei öffnen](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/00%20Privat/Finanzen%20privat/Finanzen/2026-04-30_Sauber360_Unterhaltsreinigung-April.pdf)
+- ℹ️ 110,08 € brutto · Überweisung · Reinigung Privatwohnung = haushaltsnahe Dienstleistung → steuerrelevant #steuer/2026
+- [ ] 💶 zahlen 110,08 € an Sauber 360° GmbH 📅 2026-06-24
+- [ ] 📑 für Steuer 2026 erfassen 📅 2026-06-24
+
+### 2026-06-09 — EnBW mobility+: Ladestrom Mai 2026
+- 📄 [Datei öffnen](file:///Users/tschmitz/Library/Mobile%20Documents/com~apple~CloudDocs/00%20Privat/Auto/E%20Auto%20Ladevorg%C3%A4nge/2026-06-09_EnBW_Ladestrom-Mai-2026.pdf)
+- ℹ️ 146,36 € · Lastschrift/SEPA (Konto …2013) · Ladestrom privat (nicht steuerrelevant)
+- [ ] 🔁 Abbuchung 146,36 € prüfen 📅 2026-06-09
