@@ -67,6 +67,8 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 
 ---
 
+- **Hermes↔Vault-Brücke:** Sync-Skript auf dem Mac (launchd), das Hermes-Captures in eine Vault-Inbox-Notiz zieht; ggf. gefilterte Aufgaben (ohne Praxis-Hut) zum VPS. Nur starten, wenn Stufe 1 (Hermes als Unterwegs-Inbox) sich 1–2 Wochen bewährt hat
+
 ## Erledigt (Kurzarchiv, letzte 5)
 
 - ✅ 10.06. **Blitztext Grundinstallation:** App läuft, Diktat per Menüleisten-Klick + Auto-Paste funktioniert (Hotkeys → eigener Faden)
