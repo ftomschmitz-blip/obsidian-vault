@@ -46,9 +46,9 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Nächster Schritt:** `fn + Shift` halten → sprechen → loslassen testen. Falls tot: Bedienungshilfen-Berechtigung prüfen (Systemeinstellungen → Datenschutz & Sicherheit → Bedienungshilfen, alte Blitztext-Einträge entfernen, App neu starten)
 - **Quellen:** [[2026-06-10-Blitztext-Hotkeys]] · `~/blitztext-app/BlitztextMac/Services/HotkeyService.swift`
 
-### 🟡 Mail-System: Smart-Mailbox-Fixes
-- **Hut:** übergreifend · **Stand:** 10.06. — Ursache der Duplikate geklärt: zwei Generationen aus zwei Apps. v1 (06.05., Claude Code): 📅 Heute · 📥 Privat · 📥 Praxis Bellheim · ⭐ To-Do (heute). v2 (05.06., Cowork): Teampraxis · Berufliches & CME · Firma & Investments · Verein · gGmbH · Follow-up rot · Warten auf Antwort orange. Aktuell 11 Boxen; funktionale Duplikate: 📥 Praxis Bellheim↔Teampraxis, ⭐ To-Do↔GTD-Flags.
-- **Nächster Schritt:** Tom entscheidet: v1-Reste (📥 Praxis Bellheim, ⭐ To-Do, ggf. 📥 Privat/📅 Heute) löschen? Dann: FlaggedStatus korrigieren (rot=1, orange=2) + Bereinigung in einem Plist-Durchgang (Mail beenden, Undo-Log)
+### 🟢 Mail-System: Smart-Mailbox-Fixes
+- **Hut:** übergreifend · **Stand:** 10.06. (abends) — **Bereinigung erledigt:** „Teampraxis" (schwächeres Absender-Duplikat von „📥 Praxis Bellheim") + „⭐ To-Do (heute)" (ersetzt durch GTD-Flags) gelöscht, mit Tom bestätigt → **9 Boxen**. Wichtig: Der FlaggedStatus-„Fix" aus der 07.06.-Analyse war FALSCH (0=Rot, 1=Orange ist korrekt, Werte stimmen) — Notiz korrigiert, nichts geändert. Plist-Backup im Organisation-Ordner.
+- **Nächster Schritt:** Einige Tage beobachten, ob Mail/iCloud-Sync die 9 Boxen sauber hält → dann Faden ins Kurzarchiv
 - **Quellen:** [[2026-06-07-Smart-Mailbox-Sortierung]] · [[Mail-System]] · [[2026-06-10-Konsistenz-Audit-Claude-Umgebung]]
 
 ---

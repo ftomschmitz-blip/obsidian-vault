@@ -55,17 +55,18 @@ Links zu Dateien in Cowork-Outputs, andere Obsidian-Notizen.
 
 **Der Vault ist die Wahrheit, Projektwissen ist nur ein Snapshot.** Dateien im Projektwissen der Claude-App können nicht automatisch aktualisiert werden — bei Bedarf manuell neu hochladen (Drag & Drop).
 
-**Diesen Text in die Projekt-Instruktionen jedes Claude-App-Projekts einfügen:**
+**Diesen Text in die Projekt-Instruktionen jedes Claude-App-Projekts einfügen (Stand 10.06.2026, ersetzt ältere Fassung):**
 
-> Am Ende jeder Session: (1) Zusammenfassung via mcp-obsidian nach `99_Meta/Cowork-Chats/YYYY-MM-DD-Kurztitel.md` schreiben, (2) in `00_Faeden.md` den zugehörigen Faden-Block aktualisieren (Stand + Nächster Schritt). Zu Session-Beginn bei laufenden Themen zuerst `00_Faeden.md` lesen.
+> Zu Session-Beginn: `00_Regeln.md` (verbindliche app-übergreifende Regeln) und bei laufenden Themen `00_Faeden.md` via mcp-obsidian lesen. Vor jeder Änderung an Ordnungssystemen (Mail, Kalender, Erinnerungen, Dateistrukturen, Master-Plan): erst Ist-Zustand lesen, Bestehendes erweitern statt parallel neu anlegen, nichts löschen ohne Rückfrage. Am Ende jeder Session: (1) Zusammenfassung nach `99_Meta/Cowork-Chats/YYYY-MM-DD-Kurztitel.md` schreiben, (2) in `00_Faeden.md` den zugehörigen Faden-Block aktualisieren (Stand + Nächster Schritt), (3) bei Setup-Änderungen zusätzlich die Master-Plan-Datei (`~/Desktop/Claude /Projekte/Organisation/Master-Plan_Setup_2026-05.md`) nachführen.
 
 ## Wochenreview (freitags oder sonntags, 15 Min)
 
 Tom startet in irgendeiner Claude-Session mit „Wochenreview bitte". Ablauf:
 1. `00_Faeden.md` lesen und jeden aktiven Faden durchgehen: Was ist passiert? Stockt etwas? Erledigt?
-2. Parkplatz sichten: Was wird aktiviert (nur wenn < 7 aktive Fäden)?
-3. **Top-3 der Woche** neu setzen — gemeinsam, Tom entscheidet.
-4. Erledigtes ins Kurzarchiv verschieben, `aktualisiert:`-Datum setzen.
+2. **Konsistenz-Check (2 Min):** Stimmen Master-Plan-Datei, `00_Faeden.md` und Claude-Code-Memory überein? Widersprechen sich Regeln in `00_Regeln.md`, CLAUDE.md-Dateien oder Projekt-Instruktionen? Drift sofort in der kanonischen Quelle auflösen (Rangfolge in `00_Regeln.md`).
+3. Parkplatz sichten: Was wird aktiviert (nur wenn < 7 aktive Fäden)?
+4. **Top-3 der Woche** neu setzen — gemeinsam, Tom entscheidet.
+5. Erledigtes ins Kurzarchiv verschieben, `aktualisiert:`-Datum setzen.
 
 ## Sonderfall: rein konversationelle Chats
 

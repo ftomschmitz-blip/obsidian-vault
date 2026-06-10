@@ -13,7 +13,9 @@ Schlankes Mail-System: **Hut-Sichten als Smart Mailboxen + automatische Vorsorti
 2. **Lokale Ordner** „Auf meinem Mac" — Archivablage mit Themen-Unterordnern (00–90).
 3. **Mail-Regeln** — verschieben eingehende Mails automatisch in die richtigen lokalen Ordner.
 
-## Smart Mailboxen (Stand 2026-06-05)
+## Smart Mailboxen (Stand 2026-06-10 — bereinigt, 9 Boxen)
+
+**Bereinigung 10.06.2026:** Duplikate „Teampraxis" (Absender-Filter, schwächer als Konto-Filter) und „⭐ To-Do (heute)" (ersetzt durch GTD-Flags) gelöscht — sie stammten aus parallelen Sessions verschiedener Claude-Apps. Zusätzlich verifiziert: **FlaggedStatus-Werte sind korrekt** (Apple-Index: 0 = Rot, 1 = Orange) — der in der Notiz vom 07.06. vorgeschlagene „Fix" war falsch und wurde verworfen. Zusätzlich zu den 8 unten existiert „📅 Heute" (Tagessicht). Plist-Backup: `~/Desktop/Claude /Projekte/Organisation/SyncedSmartMailboxes_BACKUP_2026-06-10.plist`. In Mail heißen die Boxen teils mit 📥-Präfix („📥 Praxis Bellheim", „📥 Privat").
 
 | Sicht | Filter | Treffer | Bewertung |
 |---|---|---|---|

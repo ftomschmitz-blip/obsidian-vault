@@ -42,3 +42,26 @@ Tom: Claude-Umgebung auf sich gegenseitig beeinflussende/störende Regeln und An
 
 - `~/Desktop/Claude /Projekte/Organisation/Master-Plan_Setup_2026-05.md` (konsolidiert)
 - [[Mail-System]] · [[2026-06-07-Smart-Mailbox-Sortierung]] · [[00_Faeden]]
+
+---
+
+## Nachtrag (gleiche Session, später): Mailbox-Bereinigung durchgeführt
+
+- **Gelöscht** (von Tom bestätigt): „Teampraxis" + „⭐ To-Do (heute)" → 9 Smart Mailboxen verbleiben. Backup: `~/Desktop/Claude /Projekte/Organisation/SyncedSmartMailboxes_BACKUP_2026-06-10.plist`
+- **Wichtige Korrektur der Korrektur:** Die 07.06.-Analyse hatte die Lösch-Empfehlung falsch herum („📥 Praxis Bellheim" weg) und einen falschen FlaggedStatus-Fix (rot=1/orange=2) notiert. Tatsächlich: „📥 Praxis Bellheim" (Konto-Filter) ist die bessere, dokumentierte Box; FlaggedStatus 0=Rot/1=Orange ist Apples korrekter Index — die Werte stimmten von Anfang an. Der falsche „Fix" hätte den GTD-Workflow zerstört. Notiz vom 07.06. mit Warnbanner korrigiert.
+- Mail wurde für den Plist-Eingriff beendet und danach neu gestartet.
+- **Offen:** Einige Tage beobachten, ob der iCloud-Sync die 9 Boxen stabil hält.
+
+---
+
+## Nachtrag 2: Drift-Prävention eingerichtet
+
+Auftrag: künftige Regel-Konflikte zwischen den Apps strukturell verhindern.
+
+1. **`00_Regeln.md`** (Vault-Root) neu angelegt — einzige Quelle für app-übergreifende Regeln: Rangfolge der kanonischen Quellen, Änderungsprotokoll für Ordnungssysteme (Ist-Zustand lesen → erweitern statt neu → Plan+Faden nachführen → nichts löschen ohne Rückfrage → Widersprüche melden), bekannte Fallen (FlaggedStatus, AppleScript-Bugs).
+2. **SessionStart-Hook** in `~/.claude/settings.json`: lädt `00_Regeln.md` automatisch in jede Claude-Code-Session (greift ab der nächsten Session).
+3. **`~/.claude/CLAUDE.md`**: Kurzverweis auf `00_Regeln.md` ergänzt (Absicherung, falls Hook nicht greift).
+4. **`99_Meta/Cowork-Workflow.md`**: Paste-Block für Projekt-Instruktionen erweitert (Regeln lesen, Ist-Zustand prüfen, Master-Plan nachführen); Wochenreview um 2-Min-Konsistenz-Check ergänzt (neuer Schritt 2).
+5. **Memory**: neuer Eintrag `feedback_zentrale_regeln.md`.
+
+**[Tom] Einmalig (5 Min):** Den aktualisierten Paste-Block aus `Cowork-Workflow.md` in die Projekt-Instruktionen der bestehenden Claude-App-Projekte einfügen (Cowork/Desktop: Projekt → Instruktionen) und sinngemäß in die persönlichen Präferenzen der Claude-App (Einstellungen → Profil), damit auch projektlose Desktop-Chats die Regel kennen.

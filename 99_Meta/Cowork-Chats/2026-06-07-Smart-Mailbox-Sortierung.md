@@ -1,9 +1,11 @@
 ---
 date: 2026-06-07
 thema: Smart Mailbox Sortierung prüfen
-status: Analyse abgeschlossen – Fixes ausstehend
+status: ERLEDIGT 10.06. — Achtung, FlaggedStatus-Analyse war FALSCH (siehe Korrektur unten)
 tags: [mail, organisation, claude-session]
 ---
+
+> ⚠️ **KORREKTUR 10.06.2026:** Die FlaggedStatus-Tabelle unten ist **falsch**. Apples Flaggen-Index ist `0 = Rot, 1 = Orange, 2 = Gelb …` (−1 = keine Flagge). Die bestehenden Werte (Follow-up rot = 0, Warten orange = 1) waren von Anfang an **korrekt** — Beleg: „Follow-up rot" zeigt 361 Treffer, bei „0 = nicht markiert" wären es zigtausend. **Die offenen Fixes „rot=1 / orange=2" NICHT ausführen** — sie würden das funktionierende System kaputtmachen. Duplikate „Teampraxis" + „⭐ To-Do (heute)" am 10.06. gelöscht (9 Boxen verbleiben). Details: [[2026-06-10-Konsistenz-Audit-Claude-Umgebung]]
 
 ## Zusammenfassung
 
