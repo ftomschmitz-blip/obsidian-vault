@@ -1,6 +1,6 @@
 ---
 typ: faeden
-aktualisiert: 2026-06-10
+aktualisiert: 2026-06-12
 ---
 # 🧵 Handlungsfäden
 
@@ -32,9 +32,10 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Quellen:** [[2026-06-10-Krisengespraech-Training]] · [[2026-06-10-gGmbH-Liquiditaetskrise-Leitfaden]] · `~/Desktop/Claude /gGmbH Südpfalz/`
 
 ### 🔴 Praxis: KV-Abrechnung Q2/2026
-- **Hut:** 10_Praxis-Bellheim · **Stand:** 10.06. — Faden ins Cowork-Projekt „Praxis Assistent zur Datenanalyse KV Abrechnungen" übernommen; Detail-Dokument `KV-Abrechnung-Q2-2026_Status.md` im Projektordner angelegt (Kennzahlen, offene Punkte, PDF-Links)
-- **Nächster Schritt:** 3 KV-PDFs vom 06.06. in den Projektordner kopieren → dann 29 Hinweisarten analysieren (€-Wirkung, Priorisierung). Parallel: 2 SKT-Scheine hochladen (Abdule, Bülbül), zurückgestellte Fälle (Lytvynov, Leydecker, HZV: Schwind) + Doppelansätze prüfen — **Frist 30.06.**
-- **Quellen:** [[00_Wiedervorlage]] (Einträge 04.06. + 06.06.) · Projektordner `~/Documents/Claude/Projects/Praxis Assistent zur Datenanalyse  KV Abrechnungen/`
+- **Hut:** 10_Praxis-Bellheim · **Stand:** 12.06. — `kv_bellheim.py` rekonstruiert (VG-Erfassung jetzt 100 % statt 92,8 %), neuer KV-Datensatz vom 12.06. verarbeitet: Honorar 209.326,50 € (+12.951 ggü. 06.06.), Fallwert 86,46 €, 2.421 Fälle. Honorarwirksame Vorprüfungs-Treffer 38 → 10 — Korrekturen haben gegriffen. Dashboard + Aktionsliste + Snapshot-Vergleich im Projektordner; PDFs + tomedo-Exporte dort abgelegt.
+- **Nächster Schritt:** Aktionsliste abarbeiten — 3 SKT-Scheine (Abdule, Bülbül, **neu: Al Humsi**), Fall Ruppender (kurative Diagnose), 6 GOP-Konflikte. **Kriterium 10 Sprechstundenzeiten im Mitgliederbereich auf „Ja" stellen (immer noch offen!)** + Video von 0,59 % auf ≥1 % (~10–11 Videofälle) → 03041 statt 03042 — **Frist 30.06.**
+- **Danach:** tomedo-XLSX-Merge (Exporte liegen bereit: KV + EBM vom 12.06.), Chronikerquoten 03220/03221, Quartalsvergleich via Snapshots
+- **Quellen:** [[2026-06-12-KV-Pipeline-Rekonstruktion]] · Projektordner `~/Documents/Claude/Projects/Praxis Assistent zur Datenanalyse  KV Abrechnungen/`
 
 ### 🟡 Organisation: 6-Hüte-Setup (Master-Plan v2)
 - **Hut:** übergreifend · **Stand:** 10.06. (abends, Konsistenz-Audit) — Planfile jetzt vollständig auf v2 konsolidiert (v1-Reste in Roadmap/Tasks/Mailbox/Dateien-Abschnitten entfernt). Cross-App-Drift behoben: kanonische Quellen festgelegt (Planfile = Soll · dieser Faden = Stand · Memory = nur Verweis). Ist-Zustand erhoben: Erinnerungen noch 4 v1-Listen + 8 Alt-Listen („Erinnerungen Private" doppelt!), Kalender noch v1-Farben.
