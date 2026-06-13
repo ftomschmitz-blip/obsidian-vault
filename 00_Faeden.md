@@ -84,3 +84,8 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Hut:** übergreifend / Personal Brand · **Stand:** 13.06. — Workbook ausgefüllt, 3 Content-Säulen definiert, favorisierte Instagram-Bio bestätigt, beide Canva-Template-Sets gesichtet (B-Roll 8 Slides + Karussell 12 Slides), Template-Mapping in Memory gespeichert.
 - **Nächster Schritt:** (1) Eigene Fotos in Projektordner laden → Template-Matching · (2) 2–3 B-Roll-Videos (7 Sek.) erstellen — Slides 6/7 (schwarz+Text) sofort ohne Footage möglich · (3) erste Posts texten
 - **Quellen:** [[2026-06-13-Social-Media-Positionierung]] · Memory `positionierung-social-media` + `instagram-content-system` · Projektordner `~/Documents/Claude/Projects/Kurs Sven Positionierung, KI, Instagram, etc., pp.`
+
+---
+> **Update 14.06. — Social Media / Podcast:**
+> Podcast-Episode „KI in der Arztpraxis" als MP4 fertig. Zwei Dateien erstellt: `_WEB.mp4` (6,8 MB, faststart) + `_INSTA_TEASER.mp4` (90 Sek., 9:16, 1,7 MB). Caption Variante 2 bevorzugt, Variante 3 als Reserve. Details: [[2026-06-14-Podcast-MP4-Instagram]]
+> **Nächster Schritt:** (1) MP4s auf Website · (2) Insta-Teaser posten (Caption V2, CTA „KI" per DM) · (3) Fotos für Template-Matching laden · (4) B-Roll-Videos erstellen
