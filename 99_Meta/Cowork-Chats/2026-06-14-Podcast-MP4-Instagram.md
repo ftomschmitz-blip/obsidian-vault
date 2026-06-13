@@ -42,3 +42,17 @@ Meine ehrliche Antwort — in diesem Podcast.
 - Captions finalisieren + posten
 - Ggf. Overlay-Text „Vollversion auf Anfrage / DM" direkt ins Reel einblenden
 - Beide MP4-Dateien auf Website einbinden / hochladen
+
+---
+
+## Zusatz: Landing Page Konzepte (erstellt über Nacht)
+
+3 Konzepte zur Abnahme — gespeichert als `Landing-Page-Konzepte-Thomas-Schmitz.md` im Cowork-Ausgabeordner.
+
+| Konzept | Motto | Tool | Aufwand |
+|---|---|---|---|
+| 1 — Der direkte Schuss | Einseiter, max. Conversion | Carrd | 2 h |
+| 2 — Authority Hub | Vertrauen + Freebie | Framer | 1 Tag |
+| 3 — Die Geschichte | Narrative, emotional | Notion/Squarespace | halber Tag |
+
+**Empfehlung:** Konzept 1 sofort, Konzept 2 mittelfristig, Konzept 3 als Text-Inspiration nutzen.
