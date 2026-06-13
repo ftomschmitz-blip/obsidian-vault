@@ -79,3 +79,8 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - ✅ 10.06. **Blitztext Grundinstallation:** App läuft, Diktat per Menüleisten-Klick + Auto-Paste funktioniert (Hotkeys → eigener Faden)
 
 - **⏸️ dok-triage-mi-sa (pausiert 13.06.2026):** Scheduled Task deaktiviert — ordnerstruktur.md kollidiert mit Master-Plan v2 (kein Verein/gGmbH-Split, iCloud ≠ OneDrive für Praxis/SüdpfalzDOCs). **Reaktivieren nach** Abschluss Faden „Organisation: 6-Hüte-Setup": ordnerstruktur.md anpassen → Task in Cowork wieder einschalten.
+
+### 🟢 Social Media: Positionierung + Content-Produktion (Kurs Sven)
+- **Hut:** übergreifend / Personal Brand · **Stand:** 13.06. — Workbook ausgefüllt, 3 Content-Säulen definiert, favorisierte Instagram-Bio bestätigt, beide Canva-Template-Sets gesichtet (B-Roll 8 Slides + Karussell 12 Slides), Template-Mapping in Memory gespeichert.
+- **Nächster Schritt:** (1) Eigene Fotos in Projektordner laden → Template-Matching · (2) 2–3 B-Roll-Videos (7 Sek.) erstellen — Slides 6/7 (schwarz+Text) sofort ohne Footage möglich · (3) erste Posts texten
+- **Quellen:** [[2026-06-13-Social-Media-Positionierung]] · Memory `positionierung-social-media` + `instagram-content-system` · Projektordner `~/Documents/Claude/Projects/Kurs Sven Positionierung, KI, Instagram, etc., pp.`
