@@ -71,3 +71,5 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 ## Erledigt (Kurzarchiv, letzte 5)
 
 - ✅ 10.06. **Blitztext Grundinstallation:** App läuft, Diktat per Menüleisten-Klick + Auto-Paste funktioniert (Hotkeys → eigener Faden)
+
+- **⏸️ dok-triage-mi-sa (pausiert 13.06.2026):** Scheduled Task deaktiviert — ordnerstruktur.md kollidiert mit Master-Plan v2 (kein Verein/gGmbH-Split, iCloud ≠ OneDrive für Praxis/SüdpfalzDOCs). **Reaktivieren nach** Abschluss Faden „Organisation: 6-Hüte-Setup": ordnerstruktur.md anpassen → Task in Cowork wieder einschalten.
