@@ -1,6 +1,6 @@
 ---
 typ: faeden
-aktualisiert: 2026-06-12
+aktualisiert: 2026-06-13
 ---
 # 🧵 Handlungsfäden
 
@@ -59,6 +59,12 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **Nächster Schritt:** Morgen (11.06.) prüfen, ob das erste Briefing um 7:00 ankommt und Qualität passt → danach weitere Use Cases. Oxylabs-Credits im Blick behalten (Websuche)
 - **Regel:** keine Patientendaten/Zugangsdaten/gGmbH-Interna über den Bot (kein E2E)
 - **Quellen:** [[2026-06-10-Hermes-Telegram-Setup]]
+
+### 🟢 Token sparen: Lokaler Ollama-Direktzugang
+- **Hut:** übergreifend · **Stand:** 13.06. — Denkmodell korrigiert: es gibt KEINEN „erst lokal, dann Claude"-Vorfilter; jede Claude-Session läuft voll über die Cloud (kostenpflichtig), Ollama nur wenn Claude das MCP-Tool aufruft. Echter Gratis-Weg = lokaler Direktkanal ohne Claude. **Open WebUI** installiert (`uv tool install --python 3.11 open-webui`, isoliert), verbunden mit headless `ollama serve`, läuft auf http://localhost:8080, Telemetrie aus, kein Autostart. Steuer-Skript `~/.local/bin/ollama-ui` (start/stop/status) angelegt + getestet (Health ✅).
+- **Nächster Schritt Tom:** im Browser einmalig lokalen Admin-Account anlegen → Modell wählen (llama3.2/qwen3:8b/gemma4) → testen. Danach Faustregel im Alltag anwenden (reines Nachdenken über Text → lokal; etwas tun/nachschauen/koordinieren → Claude).
+- **Spar-Haupthebel zusätzlich:** Session-Disziplin (neuer Chat pro Thema, /compact bei langen Threads).
+- **Quellen:** [[2026-06-13-Lokaler-Ollama-Direktzugang]] · Memory `project_local_ollama_ui`
 
 ## ⏸️ Parkplatz
 
