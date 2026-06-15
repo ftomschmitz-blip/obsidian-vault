@@ -9,6 +9,7 @@ Stand: 2026-06-15
 | Anthropic Claude | Claude Sonnet 4.6 (MAX) | Haupt-Modell | ✅ Aktiv |
 | OpenRouter | google/gemini-2.5-flash | Cron Jobs & Automatisierung | ✅ Aktiv |
 | Google AI Studio | Gemini 2.5 (Flash/Pro) | Fallback wenn Claude-Token leer | ✅ Aktiv |
+| **Failover (Auto-Switch)** | google/gemini-2.5-pro | Automatischer Modellwechsel bei API-Fehlern/Rate-Limits | ✅ Aktiv |
 
 ---
 
@@ -39,9 +40,13 @@ Stand: 2026-06-15
 
 ---
 
-## Modell wechseln
+## Modell wechseln & Failover
 
-Wenn Claude-Token leer sind → in Telegram schreiben:
+### Automatischer Modellwechsel (Failover)
+Sollte dein Hauptmodell (Claude Sonnet 4.6) überlastet sein oder das Token-Limit erreicht sein, schaltet Hermes **automatisch und ohne Unterbrechung** auf **Google Gemini 2.5 Pro** (via OpenRouter) um!
+
+### Manueller Wechsel
+Wenn du bewusst das Modell wechseln möchtest → in Telegram schreiben:
 > „Wechsel auf Gemini"
 
 Oder manuell: `/model` → OpenRouter → `google/gemini-2.5-pro`
