@@ -32,7 +32,7 @@
   "submoduleRecurseCheckout": false,
   "gitDir": "",
   "showFileMenu": true,
-  "authorInHistoryView": "hide",
+  "authorInHistoryView": "initials",
   "dateInHistoryView": false,
   "diffStyle": "split",
   "hunks": {
@@ -41,7 +41,7 @@
     "statusBar": "disabled"
   },
   "lineAuthor": {
-    "show": false,
+    "show": true,
     "followMovement": "inactive",
     "authorDisplay": "initials",
     "showCommitHash": false,
