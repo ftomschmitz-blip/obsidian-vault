@@ -28,3 +28,9 @@ projekt: Hermes Agent im VCP
 - ✅ Erster Cron-Job in Hermes eingerichtet: **Morning Briefing Mo–Fr 7:00** per Telegram (Top-News DE Politik/Wirtschaft/Gesundheit · Wetter Bellheim · Medizin/Forschung · max. 15 Zeilen mit Quellen). Erste Ausgabe: Do 11.06., 7:00
 - Architektur-Entscheidung: Obsidian-Aufgaben-Briefing bleibt **lokal** (Patientennamen!), Hermes liefert separates News-Briefing via Telegram. Cowork-Sandbox hat keinen Netzzugang zu Telegram/VPS — direkte Weiterleitung nicht möglich
 - Idee für später (Parkplatz-Kandidat): Vault-Teilsync zum VPS, damit Hermes auch Aufgaben briefen kann — nur mit Datenschutz-Filter
+
+
+---
+
+## Fortsetzung
+→ [[2026-06-15-Hermes-Dual-Setup-Tutorial]] (Tailscale + lokale Desktop-App auf Mac Studio)
