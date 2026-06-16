@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handbuch: Hermes Agent, Obsidian & Claude</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --card-bg: #0f172a;
+      --border-color: #1e293b;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --cyan: #22d3ee;
+      --emerald: #34d399;
+      --violet: #a78bfa;
+      --amber: #fbbf24;
+      --rose: #fb7185;
+      --orange: #fb923c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1.5rem;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .pulse-dot {
+      width: 14px;
+      height: 14px;
+      background: var(--cyan);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+    
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--cyan);
+      padding-left: 0.75rem;
+      color: var(--cyan);
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--violet);
+    }
+    
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    
+    .diagram-card {
+      background: var(--card-bg);
+      border-radius: 1rem;
+      border: 1px solid var(--border-color);
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+      overflow-x: auto;
+    }
+
+    .diagram-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    svg {
+      width: 100%;
+      min-width: 800px;
+      display: block;
+    }
+
+    .content-section {
+      background: rgba(15, 23, 42, 0.3);
+      border: 1px solid var(--border-color);
+      border-radius: 0.75rem;
+      padding: 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #cbd5e1;
+    }
+
+    ol, ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      color: #cbd5e1;
+    }
+
+    strong {
+      color: white;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      background: #1e293b;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+      font-size: 0.9em;
+      color: var(--rose);
+    }
+
+    pre {
+      font-family: 'JetBrains Mono', monospace;
+      background: #090d16;
+      border: 1px solid var(--border-color);
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+
+    pre code {
+      background: transparent;
+      padding: 0;
+      color: #e2e8f0;
+      font-size: 0.875rem;
+    }
+
+    .step-badge {
+      background: var(--cyan);
+      color: var(--bg-dark);
+      padding: 0.25rem 0.6rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+      display: inline-block;
+    }
+
+    .tip-box {
+      background: rgba(251, 191, 36, 0.1);
+      border-left: 4px solid var(--amber);
+      padding: 1rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+      margin: 1.5rem 0;
+    }
+
+    .tip-box strong {
+      color: var(--amber);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 0.5rem;
+      padding: 1.25rem;
+    }
+
+    .info-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .info-card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .info-card-dot.cyan { background: var(--cyan); }
+    .info-card-dot.emerald { background: var(--emerald); }
+    .info-card-dot.orange { background: var(--orange); }
+
+    .info-card h4 {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .info-card p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>Hermes Agent + Obsidian + Claude Setup-Handbuch</h1>
+      </div>
+      <p class="subtitle">Schritt-für-Schritt-Anleitung zur Erstellung deiner optimalen Agenten-Landschaft</p>
+    </header>
+
+    <!-- Visual Architecture Diagram Card -->
+    <div class="diagram-card">
+      <div class="diagram-title">
+        <span>📊 SYSTEM-ARCHITEKTUR (INTERAKTIVES SVG-SCHAUBILD)</span>
+      </div>
+      <svg viewBox="0 0 950 480" xmlns="http://www.w3.org/2000/svg">
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#64748b" />
+          </marker>
+          <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+
+        <!-- Grid Background -->
+        <rect width="100%" height="100%" fill="url(#grid)" rx="8" />
+
+        <!-- BOUNDARY: LOCAL MACHINE -->
+        <rect x="20" y="20" width="360" height="420" rx="12" fill="rgba(34, 211, 238, 0.03)" stroke="#22d3ee" stroke-width="1.2" stroke-dasharray="6,4"/>
+        <text x="35" y="45" fill="#22d3ee" font-size="11" font-weight="700" font-family="'JetBrains Mono', monospace">LOKALER RECHNER (MAC / PC)</text>
+
+        <!-- BOUNDARY: VPS SERVER -->
+        <rect x="570" y="20" width="360" height="420" rx="12" fill="rgba(52, 211, 153, 0.03)" stroke="#34d399" stroke-width="1.2" stroke-dasharray="6,4"/>
+        <text x="585" y="45" fill="#34d399" font-size="11" font-weight="700" font-family="'JetBrains Mono', monospace">HOSTINGER VPS (SERVER)</text>
+
+        <!-- LOCAL COMPONENTS -->
+        <!-- Claude Desktop -->
+        <rect x="50" y="90" width="140" height="70" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="120" y="125" fill="white" font-size="12" font-weight="bold" font-family="'Inter', sans-serif" text-anchor="middle">Claude Desktop</text>
+        <text x="120" y="142" fill="#94a3b8" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">mcp-client</text>
+
+        <!-- Obsidian App -->
+        <rect x="50" y="290" width="140" height="70" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="120" y="325" fill="white" font-size="12" font-weight="bold" font-family="'Inter', sans-serif" text-anchor="middle">Obsidian (Lokal)</text>
+        <text x="120" y="342" fill="#94a3b8" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">Local REST API</text>
+
+        <!-- VPS COMPONENTS -->
+        <!-- Hermes Agent -->
+        <rect x="760" y="90" width="140" height="70" rx="6" fill="#0f172a" stroke="#34d399" stroke-width="1.5"/>
+        <text x="830" y="125" fill="white" font-size="12" font-weight="bold" font-family="'Inter', sans-serif" text-anchor="middle">Hermes Agent</text>
+        <text x="830" y="142" fill="#34d399" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">"mcp serve"</text>
+
+        <!-- Obsidian Vault Server -->
+        <rect x="760" y="290" width="140" height="70" rx="6" fill="#0f172a" stroke="#34d399" stroke-width="1.5"/>
+        <text x="830" y="325" fill="white" font-size="12" font-weight="bold" font-family="'Inter', sans-serif" text-anchor="middle">Obsidian (VPS)</text>
+        <text x="830" y="342" fill="#94a3b8" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">/opt/data/vault</text>
+
+        <!-- SYNC HUB: GITHUB -->
+        <rect x="390" y="195" width="170" height="70" rx="8" fill="#1e1b4b" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="475" y="228" fill="white" font-size="13" font-weight="bold" font-family="'Inter', sans-serif" text-anchor="middle">GitHub</text>
+        <text x="475" y="248" fill="#fb923c" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle">Private Repository</text>
+
+        <!-- CONNECTIONS & ARROWS -->
+        <!-- Local REST API Connect -->
+        <line x1="120" y1="160" x2="120" y2="282" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="128" y="225" fill="#22d3ee" font-size="8" font-family="'JetBrains Mono', monospace">Local REST API</text>
+
+        <!-- Local Obsidian Push to GitHub -->
+        <path d="M 190 325 L 300 325 Q 320 325 320 280 L 320 230 L 382 230" fill="none" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+        <text x="290" y="295" fill="#fb923c" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">Git Push (15m)</text>
+
+        <!-- VPS Vault Pull from GitHub -->
+        <path d="M 560 230 L 630 230 L 630 325 L 752 325" fill="none" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+        <text x="650" y="295" fill="#fb923c" font-size="8" font-family="'JetBrains Mono', monospace">Cron Pull (30m)</text>
+
+        <!-- SSH Tunnel: Local Claude to VPS Hermes -->
+        <path d="M 190 125 L 752 125" stroke="#fb7185" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="475" y="115" fill="#fb7185" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">SSH Tunnel ("hermes mcp serve")</text>
+
+        <!-- Hermes writes directly to VPS Vault -->
+        <line x1="830" y1="160" x2="830" y2="282" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="838" y="225" fill="#34d399" font-size="8" font-family="'JetBrains Mono', monospace">Dateisystem-Schreibzugriff</text>
+
+        <!-- Legend -->
+        <g transform="translate(40, 390)">
+          <rect x="0" y="0" width="10" height="10" fill="transparent" stroke="#22d3ee" stroke-width="1"/>
+          <text x="15" y="9" fill="#94a3b8" font-size="8" font-family="'Inter', sans-serif">Lokal</text>
+
+          <rect x="80" y="0" width="10" height="10" fill="transparent" stroke="#34d399" stroke-width="1"/>
+          <text x="95" y="9" fill="#94a3b8" font-size="8" font-family="'Inter', sans-serif">VPS Server</text>
+
+          <rect x="180" y="0" width="10" height="10" fill="transparent" stroke="#fb923c" stroke-width="1"/>
+          <text x="195" y="9" fill="#94a3b8" font-size="8" font-family="'Inter', sans-serif">Git Sync</text>
+
+          <rect x="270" y="0" width="10" height="10" fill="transparent" stroke="#fb7185" stroke-width="1"/>
+          <text x="285" y="9" fill="#94a3b8" font-size="8" font-family="'Inter', sans-serif">SSH-Kopplung</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Step by Step Guide -->
+    <h2>Säule 1: Der Git-Sync (Die Brücke)</h2>
+    <div class="content-section">
+      <p>Der Git-Sync ist das unumgängliche Fundament deiner intelligenten Agentenlandschaft. Dadurch arbeiten sowohl du lokal als auch dein Hermes Agent auf dem VPS an ein und demselben Vault, ohne das Daten verloren gehen.</p>
+      
+      <ol>
+        <li>
+          <span class="step-badge">1.1</span>
+          <strong>Privates GitHub Repository erstellen</strong><br>
+          Erstelle auf GitHub ein neues Repository namens <code>obsidian-vault</code>. Stelle es zwingend auf <strong>Private</strong>. Wichtig: Initialisiere es nicht mit einer README oder .gitignore (lasse es komplett leer!).
+        </li>
+        <li>
+          <span class="step-badge">1.2</span>
+          <strong>GitHub Personal Access Token (PAT) generieren</strong><br>
+          Navigiere auf GitHub zu <code>Settings -> Developer Settings -> Personal access tokens -> Tokens (classic)</code>. Erstelle ein neues Token mit dem Scope <code>repo</code> und kopiere das Token sofort (Format: <code>ghp_...</code>).
+        </li>
+        <li>
+          <span class="step-badge">1.3</span>
+          <strong>Lokal git konfigurieren und pushen (Mac)</strong><br>
+          Öffne das Terminal auf deinem Mac und navigiere in deinen lokalen Obsidian-Ordner (Pfade mit Leerzeichen in Anführungszeichen setzen!):
+          <pre><code>cd "/Users/tschmitz/ObsidianVaults/Second Brain Tom"
+git init
+git remote add origin https://github.com/ftomschmitz-blip/obsidian-vault.git
+git add .
+git commit -m "Initialer Backup"
+git branch -M main
+git push -u origin main</code></pre>
+          <em>(Gib bei Passwortabfragen dein kopiertes ghp_-Token ein).</em>
+        </li>
+        <li>
+          <span class="step-badge">1.4</span>
+          <strong>Obsidian Git Plugin konfigurieren (Lokal)</strong><br>
+          Installiere in Obsidian das Community-Plugin <strong>Obsidian Git</strong>. Scrolle in den Plugin-Einstellungen ganz nach oben zur Sektion <strong>"Automatic"</strong>:
+          <ul>
+            <li><code>Auto commit interval (minutes)</code>: Setze dies auf <code>15</code></li>
+            <li><code>Auto push interval (minutes)</code>: Setze dies auf <code>15</code></li>
+          </ul>
+        </li>
+        <li>
+          <span class="step-badge">1.5</span>
+          <strong>Automatischer Pull auf dem VPS (Cron-Job)</strong><br>
+          Auf dem VPS ist dieser Schritt durch deinen aktiven Cron-Job <code>141e7cc673f9</code> und das Skript <code>obsidian-sync.sh</code> bereits perfekt gelöst. Er holt alle 30 Minuten deine Änderungen ab.
+        </li>
+      </ol>
+    </div>
+
+    <h2>Säule 2: Lokaler Claude-Obsidian-MCP</h2>
+    <div class="content-section">
+      <p>Damit dein lokaler Claude Desktop (oder Tools wie Cursor) in Echtzeit deine lokalen Notizen lesen und verknüpfen kann, binden wir Obsidian direkt lokal ein.</p>
+      
+      <ol>
+        <li>
+          <span class="step-badge">2.1</span>
+          <strong>Local REST API Plugin in Obsidian installieren</strong><br>
+          Suche in Obsidian nach dem Community-Plugin <strong>Local REST API</strong>, installiere und aktiviere es.
+          <ul>
+            <li>Aktiviere HTTPS in den Plugin-Einstellungen.</li>
+            <li>Generiere ein API-Token und kopiere es.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="step-badge">2.2</span>
+          <strong>Obsidian MCP-Server konfigurieren</strong><br>
+          Öffne die Konfigurationsdatei deines lokalen Claude Desktops unter Mac OS: <code>~/Library/Application Support/Claude/claude_desktop_config.json</code>.<br>
+          Trage den Obsidian-Server von Markus Pfundstein ein:
+          <pre><code>{
+  "mcpServers": {
+    "obsidian": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "OBSIDIAN_API_KEY=dein_api_key_hier",
+        "-e",
+        "OBSIDIAN_PORT=27124",
+        "mcp/server/obsidian"
+      ]
+    }
+  }
+}</code></pre>
+        </li>
+      </ol>
+      <div class="tip-box">
+        <strong>💡 Profi-Tipp:</strong> Falls du kein Docker installiert hast, kannst du das Tool auch über npx / Node.js direkt einbinden.
+      </div>
+    </div>
+
+    <h2>Säule 3: Remote VPS-Hermes-MCP (SSH-Bridge)</h2>
+    <div class="content-section">
+      <p>Dies verbindet das lokale Claude-Gehirn mit der VPS-Muskelkraft. Dein lokaler Claude steuert mich direkt auf dem VPS per SSH.</p>
+      
+      <ol>
+        <li>
+          <span class="step-badge">3.1</span>
+          <strong>SSH-Key-Authentifizierung einrichten</strong><br>
+          Damit Claude sich nahtlos verbinden kann, darf kein Passwort abgefragt werden. Richte einen passwortlosen SSH-Key ein:
+          <pre><code>ssh-copy-id dein_vps_user@deine_vps_ip</code></pre>
+        </li>
+        <li>
+          <span class="step-badge">3.2</span>
+          <strong>SSH-MCP in Claude Desktop eintragen</strong><br>
+          Erweitere deine <code>claude_desktop_config.json</code> um meinen MCP-Dienst auf dem Hostinger VPS:
+          <pre><code>{
+  "mcpServers": {
+    "hermes-vps": {
+      "command": "ssh",
+      "args": [
+        "-t",
+        "dein_vps_user@deine_vps_ip",
+        "/opt/hermes/.venv/bin/hermes mcp serve"
+      ]
+    }
+  }
+}</code></pre>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Best Practices Card Grid -->
+    <h2>Best Practices & Absicherung</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-card-header">
+          <div class="info-card-dot orange"></div>
+          <h4>Merge-Konflikte meiden</h4>
+        </div>
+        <p>Erstelle im Root deines Vaults eine <code>.gitignore</code>-Datei mit folgenden Zeilen, um temporäre Layout-Änderungen von Obsidian vom Synchronisieren auszuschließen:</p>
+        <pre style="margin: 0.5rem 0; padding: 0.5rem; font-size: 0.75rem;"><code>.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/obsidian-git/</code></pre>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-header">
+          <div class="info-card-dot cyan"></div>
+          <h4>Asynchrone Agent-Inbox</h4>
+        </div>
+        <p>Erstelle eine Notiz <code>Inbox/Agent_Inbox.md</code>. Schreibe dort Aufgaben im Checkbox-Format auf (z.B. <code>- [ ] Aufgabe: ...</code>). Ein VPS-Cronjob kann diese im Hintergrund abarbeiten, Ergebnisse schreiben und abhaken, während du offline bist.</p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-header">
+          <div class="info-card-dot emerald"></div>
+          <h4>Sichere Befehle</h4>
+        </div>
+        <p>Setze auf dem VPS die Sicherheitsstufe in der Config auf <code>approvals.mode: smart</code>. So führt Hermes im Chat keine destruktiven Befehle unbestätigt aus, während im lokalen MCP-Modus über SSH freie Hand herrscht.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Erstellt von deinem Hermes Agenten • Bellheim • Juni 2026
+    </footer>
+  </div>
+</body>
+</html>
