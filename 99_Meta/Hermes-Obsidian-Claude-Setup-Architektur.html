@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermes - Obsidian - Claude Setup Architektur</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 2rem;
+      color: white;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      margin-bottom: 2rem;
+    }
+    
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .pulse-dot {
+      width: 12px;
+      height: 12px;
+      background: #22d3ee;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.1); }
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+    
+    .subtitle {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      margin-left: 1.75rem;
+    }
+    
+    .diagram-container {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 1rem;
+      border: 1px solid #1e293b;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+    
+    svg {
+      width: 100%;
+      min-width: 950px;
+      display: block;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 0.75rem;
+      border: 1px solid #1e293b;
+      padding: 1.25rem;
+    }
+    
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+    
+    .card-dot.cyan { background: #22d3ee; }
+    .card-dot.emerald { background: #34d399; }
+    .card-dot.violet { background: #a78bfa; }
+    .card-dot.amber { background: #fbbf24; }
+    .card-dot.rose { background: #fb7185; }
+    
+    .card h3 {
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+    
+    .card ul {
+      list-style: none;
+      color: #94a3b8;
+      font-size: 0.75rem;
+    }
+    
+    .card li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      color: #475569;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>Hermes - Obsidian - Claude Setup Architektur</h1>
+      </div>
+      <p class="subtitle">Interaktives & autonomes Wissensnetzwerk (Lokal & VPS-Server gekoppelt)</p>
+    </div>
+
+    <!-- Main Diagram -->
+    <div class="diagram-container">
+      <svg viewBox="0 0 1000 600">
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+          </marker>
+          <marker id="arrowhead-rose" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#fb7185" />
+          </marker>
+          <marker id="arrowhead-cyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee" />
+          </marker>
+          <marker id="arrowhead-emerald" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#34d399" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- ==================== LOKALE BOUNDARY ==================== -->
+        <rect x="30" y="40" width="390" height="520" rx="12" fill="rgba(34, 211, 238, 0.01)" stroke="#22d3ee" stroke-width="1.2" stroke-dasharray="8,4"/>
+        <text x="45" y="58" fill="#22d3ee" font-size="10" font-weight="700">LOKAL (DEIN MAC / PC)</text>
+
+        <!-- Obsidian App Lokal -->
+        <rect x="60" y="90" width="150" height="85" rx="6" fill="#0f172a" />
+        <rect x="60" y="90" width="150" height="85" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="135" y="115" fill="white" font-size="11" font-weight="600" text-anchor="middle">Obsidian Lokal</text>
+        <text x="135" y="132" fill="#94a3b8" font-size="8.5" text-anchor="middle">Mac Applikation</text>
+        <text x="135" y="146" fill="#94a3b8" font-size="8" text-anchor="middle">Einträge & Notizen</text>
+        <text x="135" y="162" fill="#22d3ee" font-size="7.5" font-weight="600" text-anchor="middle">Mac-Pfad gesetzt</text>
+
+        <!-- Local REST API Plugin -->
+        <rect x="260" y="95" width="130" height="75" rx="6" fill="#0f172a" />
+        <rect x="260" y="95" width="130" height="75" rx="6" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+        <text x="325" y="118" fill="white" font-size="10" font-weight="600" text-anchor="middle">Local REST API</text>
+        <text x="325" y="133" fill="#94a3b8" font-size="8" text-anchor="middle">Obsidian Plugin</text>
+        <text x="325" y="146" fill="#94a3b8" font-size="7.5" text-anchor="middle">Sichere Schnittstelle</text>
+        <text x="325" y="159" fill="#fb7185" font-size="8" font-weight="600" text-anchor="middle">Port 27124 (HTTPS)</text>
+
+        <!-- Claude Desktop Lokal -->
+        <rect x="60" y="240" width="180" height="110" rx="6" fill="#0f172a" />
+        <rect x="60" y="240" width="180" height="110" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="150" y="265" fill="white" font-size="11" font-weight="700" text-anchor="middle">Claude Desktop</text>
+        <text x="150" y="285" fill="#94a3b8" font-size="8.5" text-anchor="middle">• mcp-obsidian (Lokal)</text>
+        <text x="150" y="300" fill="#94a3b8" font-size="8.5" text-anchor="middle">• hermes-vps (Remote)</text>
+        <text x="150" y="320" fill="#22d3ee" font-size="8" text-anchor="middle">Steuerung & Interaktion</text>
+        <text x="150" y="338" fill="#94a3b8" font-size="7" text-anchor="middle">claude_desktop_config.json</text>
+
+        <!-- SSH Credentials -->
+        <rect x="60" y="440" width="180" height="80" rx="6" fill="#0f172a" />
+        <rect x="60" y="440" width="180" height="80" rx="6" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+        <text x="150" y="465" fill="white" font-size="11" font-weight="600" text-anchor="middle">SSH-Schlüssel</text>
+        <text x="150" y="482" fill="#94a3b8" font-size="8.5" text-anchor="middle">Passwortloser SSH-Login</text>
+        <text x="150" y="496" fill="#94a3b8" font-size="8" text-anchor="middle">id_ed25519 hinterlegt</text>
+        <text x="150" y="510" fill="#fb7185" font-size="7.5" text-anchor="middle">Sicherer Kanal</text>
+
+
+        <!-- ==================== MITTE (TRANSIT / GITHUB) ==================== -->
+        <!-- GitHub Repository -->
+        <rect x="450" y="100" width="110" height="75" rx="6" fill="#0f172a" />
+        <rect x="450" y="100" width="110" height="75" rx="6" fill="rgba(30, 41, 59, 0.6)" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="505" y="125" fill="white" font-size="11" font-weight="600" text-anchor="middle">GitHub Repo</text>
+        <text x="505" y="142" fill="#94a3b8" font-size="8.5" text-anchor="middle">obsidian-vault</text>
+        <text x="505" y="158" fill="#fbbf24" font-size="8" text-anchor="middle">🔒 Privat</text>
+
+
+        <!-- ==================== REMOTE BOUNDARY ==================== -->
+        <rect x="580" y="40" width="390" height="520" rx="12" fill="rgba(52, 211, 153, 0.01)" stroke="#34d399" stroke-width="1.2" stroke-dasharray="8,4"/>
+        <text x="595" y="58" fill="#34d399" font-size="10" font-weight="700">REMOTE (HOSTINGER VPS-SERVER)</text>
+
+        <!-- Obsidian Vault VPS -->
+        <rect x="790" y="90" width="160" height="95" rx="6" fill="#0f172a" />
+        <rect x="790" y="90" width="160" height="95" rx="6" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="870" y="115" fill="white" font-size="11" font-weight="600" text-anchor="middle">Obsidian Vault (VPS)</text>
+        <text x="870" y="132" fill="#94a3b8" font-size="8.5" text-anchor="middle">Klon des Repositories</text>
+        <text x="870" y="146" fill="#94a3b8" font-size="8" text-anchor="middle">/opt/data/obsidian-vault</text>
+        <text x="870" y="162" fill="#a78bfa" font-size="8" text-anchor="middle">Wissensbasis des VPS</text>
+        <text x="870" y="174" fill="#34d399" font-size="7.5" text-anchor="middle">Single Source of Truth</text>
+
+        <!-- Hermes Agent (VPS) -->
+        <rect x="600" y="240" width="170" height="110" rx="6" fill="#0f172a" />
+        <rect x="600" y="240" width="170" height="110" rx="6" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="685" y="265" fill="white" font-size="11" font-weight="700" text-anchor="middle">Hermes Agent</text>
+        <text x="685" y="282" fill="#94a3b8" font-size="8.5" text-anchor="middle">Autonomer Server-Agent</text>
+        <text x="685" y="296" fill="#94a3b8" font-size="8" text-anchor="middle">Arbeitet 24/7 im Docker</text>
+        <text x="685" y="316" fill="#34d399" font-size="8" text-anchor="middle">hermes mcp serve</text>
+        <text x="685" y="335" fill="#22d3ee" font-size="7.5" text-anchor="middle">Vollzugriff via SSH-Tunnel</text>
+
+        <!-- Sync-Cronjob & Skript -->
+        <rect x="800" y="240" width="140" height="75" rx="6" fill="#0f172a" />
+        <rect x="800" y="240" width="140" height="75" rx="6" fill="rgba(251, 146, 60, 0.3)" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="870" y="265" fill="white" font-size="10" font-weight="600" text-anchor="middle">Sync-Cronjob</text>
+        <text x="870" y="280" fill="#94a3b8" font-size="8.5" text-anchor="middle">obsidian-sync.sh</text>
+        <text x="870" y="294" fill="#fb923c" font-size="8" text-anchor="middle">Alle 30 Min pull/push</text>
+        <text x="870" y="306" fill="#94a3b8" font-size="7" text-anchor="middle">Automatischer Datenabgleich</text>
+
+        <!-- Hostinger VPS Umfeld -->
+        <rect x="600" y="420" width="340" height="90" rx="6" fill="#0f172a" />
+        <rect x="600" y="420" width="340" height="90" rx="6" fill="rgba(120, 53, 15, 0.2)" stroke="#fbbf24" stroke-width="1.2"/>
+        <text x="770" y="445" fill="white" font-size="11" font-weight="600" text-anchor="middle">Hostinger VPS Server-Infrastruktur</text>
+        <text x="770" y="465" fill="#94a3b8" font-size="8.5" text-anchor="middle">Hermes Agent läuft isoliert in Docker-Container</text>
+        <text x="770" y="480" fill="#94a3b8" font-size="8.5" text-anchor="middle">Hintergrund-Aufgaben & Trigger (Cronjobs)</text>
+        <text x="770" y="496" fill="#fbbf24" font-size="8" text-anchor="middle">Zuverlässige Server-Umgebung (Linux)</text>
+
+
+        <!-- ==================== CONNECTIONS / PADS ==================== -->
+        <!-- Obsidian Lokal -> Local REST API -->
+        <line x1="210" y1="130" x2="250" y2="130" stroke="#fb7185" stroke-width="1.5" marker-end="url(#arrowhead-rose)" />
+
+        <!-- Claude Desktop -> Local REST API -->
+        <path d="M 150 240 Q 150 180 250 145" fill="none" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowhead-cyan)" />
+        <text x="190" y="195" fill="#22d3ee" font-size="8">Port 27124</text>
+
+        <!-- Obsidian App Lokal -> GitHub Repo (Push) -->
+        <line x1="210" y1="110" x2="440" y2="110" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowhead-cyan)" />
+        <text x="325" y="102" fill="#22d3ee" font-size="8" text-anchor="middle">Git Push (15m)</text>
+
+        <!-- GitHub Repo -> Obsidian Vault VPS (Pull) -->
+        <line x1="560" y1="110" x2="780" y2="110" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowhead)" />
+        <text x="670" y="102" fill="#a78bfa" font-size="8" text-anchor="middle">Git Pull (30m)</text>
+
+        <!-- SSH-Schlüssel -> Claude Desktop -->
+        <line x1="150" y1="440" x2="150" y2="358" stroke="#fb7185" stroke-width="1.5" marker-end="url(#arrowhead-rose)" />
+        <text x="156" y="405" fill="#94a3b8" font-size="8">SSH-Key Auth</text>
+
+        <!-- Claude Desktop -> Hermes Agent (VPS-Tunnel) -->
+        <line x1="240" y1="295" x2="590" y2="295" stroke="#fb7185" stroke-width="2.5" stroke-dasharray="5,5" marker-end="url(#arrowhead-rose)" />
+        <text x="415" y="285" fill="#fb7185" font-size="10" font-weight="700" text-anchor="middle">Sicherer SSH-Tunnel</text>
+        <text x="415" y="315" fill="#94a3b8" font-size="8" text-anchor="middle">hermes mcp serve (Echtzeit-Kopplung)</text>
+
+        <!-- Cronjob -> Obsidian Vault VPS -->
+        <line x1="870" y1="240" x2="870" y2="193" stroke="#fb923c" stroke-width="1.5" marker-end="url(#arrowhead)" />
+        <text x="876" y="220" fill="#fb923c" font-size="8">git pull --rebase</text>
+
+        <!-- Hermes Agent -> Obsidian Vault VPS -->
+        <path d="M 770 260 Q 770 170 782 170" fill="none" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead-emerald)" />
+        <text x="765" y="215" fill="#34d399" font-size="8" text-anchor="middle">Direkter Zugriff</text>
+
+
+        <!-- ==================== LEGEND ==================== -->
+        <text x="420" y="555" fill="white" font-size="10" font-weight="700">Legende</text>
+        
+        <rect x="420" y="567" width="16" height="10" rx="2" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1"/>
+        <text x="442" y="575" fill="#94a3b8" font-size="8.5">Lokale App</text>
+        
+        <rect x="530" y="567" width="16" height="10" rx="2" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1"/>
+        <text x="552" y="575" fill="#94a3b8" font-size="8.5">Remote App (VPS)</text>
+        
+        <rect x="670" y="567" width="16" height="10" rx="2" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1"/>
+        <text x="692" y="575" fill="#94a3b8" font-size="8.5">Datenbank / Vault</text>
+        
+        <rect x="800" y="567" width="16" height="10" rx="2" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1"/>
+        <text x="822" y="575" fill="#94a3b8" font-size="8.5">Schnittstelle / Auth</text>
+      </svg>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="cards">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot cyan"></div>
+          <h3>Säule 1: Git-Sync</h3>
+        </div>
+        <ul>
+          <li>• <strong>Mac-Seite:</strong> Obsidian Git Plugin committet & pusht im Hintergrund alle 15 Minuten zum privaten GitHub Repo.</li>
+          <li>• <strong>VPS-Seite:</strong> Ein Hermes-Cronjob holt (pull) Änderungen alle 30 Minuten mit <code>git pull --rebase</code>.</li>
+          <li>• <strong>Effekt:</strong> Volle Synchronität deiner Gedanken auf allen Geräten und dem Server ohne Cloud-Kosten.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot rose"></div>
+          <h3>Säule 2: Lokaler Claude MCP</h3>
+        </div>
+        <ul>
+          <li>• <strong>Local REST API:</strong> Gibt deinem lokalen Obsidian eine sichere HTTPS-Schnittstelle.</li>
+          <li>• <strong>Claude Desktop:</strong> Kann direkt über das <code>mcp-obsidian</code> Plugin lokale Dateien lesen, durchsuchen und anlegen.</li>
+          <li>• <strong>Nutzen:</strong> Direkter Zugriff auf dein Second Brain ohne Hochladen von Texten in Serverumgebungen.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot emerald"></div>
+          <h3>Säule 3: Remote SSH-Bridge</h3>
+        </div>
+        <ul>
+          <li>• <strong>Die Bridge:</strong> Kettelt deinen lokalen Claude Desktop direkt mit dem remote Hermes Agent.</li>
+          <li>• <strong>Befehl:</strong> Startet im Hintergrund auf dem VPS <code>hermes mcp serve</code> über einen sicheren SSH-Tunnel.</li>
+          <li>• <strong>Nutzen:</strong> Claude kann remote Befehle ausführen, Recherchen auf dem VPS anstellen und deine Server-Umgebung steuern.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">
+      Hermes Agent • Konzipiert für Tom Schmitz • Stand Juni 2026
+    </p>
+  </div>
+</body>
+</html>
