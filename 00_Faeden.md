@@ -81,9 +81,9 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **⏸️ dok-triage-mi-sa (pausiert 13.06.2026):** Scheduled Task deaktiviert — ordnerstruktur.md kollidiert mit Master-Plan v2 (kein Verein/gGmbH-Split, iCloud ≠ OneDrive für Praxis/SüdpfalzDOCs). **Reaktivieren nach** Abschluss Faden „Organisation: 6-Hüte-Setup": ordnerstruktur.md anpassen → Task in Cowork wieder einschalten.
 
 ### 🟢 Social Media: Positionierung + Content-Produktion (Kurs Sven)
-- **Hut:** übergreifend / Personal Brand · **Stand:** 13.06. — Workbook ausgefüllt, 3 Content-Säulen definiert, favorisierte Instagram-Bio bestätigt, beide Canva-Template-Sets gesichtet (B-Roll 8 Slides + Karussell 12 Slides), Template-Mapping in Memory gespeichert.
-- **Nächster Schritt:** (1) Eigene Fotos in Projektordner laden → Template-Matching · (2) 2–3 B-Roll-Videos (7 Sek.) erstellen — Slides 6/7 (schwarz+Text) sofort ohne Footage möglich · (3) erste Posts texten
-- **Quellen:** [[2026-06-13-Social-Media-Positionierung]] · Memory `positionierung-social-media` + `instagram-content-system` · Projektordner `~/Documents/Claude/Projects/Kurs Sven Positionierung, KI, Instagram, etc., pp.`
+- **Hut:** übergreifend / Personal Brand · **Stand:** 27.06. — Konkrete KI-Anwendungsfälle für Hausarztpraxen detailliert recherchiert, in administrative, klinische und kommunikative Bereiche strukturiert sowie rechtlich-regulative Leitplanken (AI Act, DSGVO, § 393 SGB V) aufbereitet; im Vault abgelegt unter [[2026-06-27-KI-Usecases-Hausarztpraxis]] (Task t_32659f52 abgeschlossen).
+- **Nächster Schritt:** Umfassenden Content-Plan & 4-Wochen-Redaktionskalender für LinkedIn, Praxis-Newsletter und Blog erstellen (Task t_6747d3a0).
+- **Quellen:** [[2026-06-13-Social-Media-Positionierung]] · [[2026-06-27-KI-Usecases-Hausarztpraxis]] · Memory `positionierung-social-media` + `instagram-content-system` · Projektordner `~/Documents/Claude/Projects/Kurs Sven Positionierung, KI, Instagram, etc., pp.`
 
 ---
 > **Update 14.06. — Social Media / Podcast:**
