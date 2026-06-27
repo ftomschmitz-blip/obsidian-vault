@@ -81,9 +81,9 @@ Status: 🔴 kritisch/dringend · 🟢 läuft · 🟡 stockt/wartet · ⏸️ ge
 - **⏸️ dok-triage-mi-sa (pausiert 13.06.2026):** Scheduled Task deaktiviert — ordnerstruktur.md kollidiert mit Master-Plan v2 (kein Verein/gGmbH-Split, iCloud ≠ OneDrive für Praxis/SüdpfalzDOCs). **Reaktivieren nach** Abschluss Faden „Organisation: 6-Hüte-Setup": ordnerstruktur.md anpassen → Task in Cowork wieder einschalten.
 
 ### 🟢 Social Media: Positionierung + Content-Produktion (Kurs Sven)
-- **Hut:** übergreifend / Personal Brand · **Stand:** 27.06. — Konkrete KI-Anwendungsfälle für Hausarztpraxen detailliert recherchiert, in administrative, klinische und kommunikative Bereiche strukturiert sowie rechtlich-regulative Leitplanken (AI Act, DSGVO, § 393 SGB V) aufbereitet; im Vault abgelegt unter [[2026-06-27-KI-Usecases-Hausarztpraxis]] (Task t_32659f52 abgeschlossen).
-- **Nächster Schritt:** Umfassenden Content-Plan & 4-Wochen-Redaktionskalender für LinkedIn, Praxis-Newsletter und Blog erstellen (Task t_6747d3a0).
-- **Quellen:** [[2026-06-13-Social-Media-Positionierung]] · [[2026-06-27-KI-Usecases-Hausarztpraxis]] · Memory `positionierung-social-media` + `instagram-content-system` · Projektordner `~/Documents/Claude/Projects/Kurs Sven Positionierung, KI, Instagram, etc., pp.`
+- **Hut:** übergreifend / Personal Brand · **Stand:** 27.06. — Umfassender, praxisorientierter Content-Plan & 4-Wochen-Redaktionskalender auf Basis der KI-Recherche erstellt. Der Plan umfasst Zielgruppen-Schmerzpunkte, 4 strategische Themencluster, Kanalmatrix (LinkedIn, Newsletter, Blog) und 12 konkrete, fertig skizzierte Beiträge inkl. Kurzvideo-Skript und DSGVO/AI-Act-Sicherheits-Checkliste. Gespeichert im Vault unter [[2026-06-27-KI-Content-Plan-Hausarztpraxis]]. (Tasks t_32659f52 und t_6747d3a0 abgeschlossen).
+- **Nächster Schritt:** Ausarbeitung spezifischer Beiträge aus dem 4-Wochen-Plan (z.B. Erstellung erster Post-Drafts für LinkedIn oder Newsletter-Inhalte) (Task t_a48ba7cc).
+- **Quellen:** [[2026-06-13-Social-Media-Positionierung]] · [[2026-06-27-KI-Usecases-Hausarztpraxis]] · [[2026-06-27-KI-Content-Plan-Hausarztpraxis]] · Memory `positionierung-social-media` + `instagram-content-system` · Projektordner `~/Documents/Claude/Projects/Kurs Sven Positionierung, KI, Instagram, etc., pp.`
 
 ---
 > **Update 14.06. — Social Media / Podcast:**
